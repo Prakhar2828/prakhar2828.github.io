@@ -38,7 +38,7 @@ A custom domain is optional. Add one only after registering it and verifying own
 
 ## Evidence and attribution
 
-The homepage uses Prakhar’s own supplied writing and verified public Medium / LinkedIn posts as context. It introduces his Rice-to-NASA story, career aspirations, professional work and interests in football, tennis, teams and music. It links his own public football highlights and training videos; the thumbnail comes from the linked YouTube upload.
+The homepage uses Prakhar’s own supplied writing and verified public Medium / LinkedIn posts as context. It introduces his path into space and engineering, industry-wide career interests, professional work and interests in football, tennis, teams and music. It links his own public football highlights and training videos; the thumbnail comes from the linked YouTube upload.
 
 The expandable Asteria exercise on the homepage lazily loads its C++/WebAssembly model when started. It commissions the spacecraft, injects a power fault, rejects premature recovery, explicitly advances 40 simulated minutes to recharge, and recovers after the health gates pass. The visitor can export the actual journal. After completing the bounded exercise, use Restart to run it again. Browser activity pauses when hidden.
 
@@ -47,3 +47,5 @@ Three continuous interface recordings include chapter navigation, editorial capt
 Independent projects distinguish simulations, public NASA/ESA evidence, derived quantities, models and unknowns. Wind VISION credits the upstream NASA constrained latent flow-matching research. CPU results replay passed on macOS and clean Ubuntu; no fresh GPU training or benchmark campaign is claimed. No internal NASA operational data or intern exit deck is included.
 
 Personal portrait and resume belong to Prakhar Pandey. Third-party research assets retain their existing terms and attribution. This repository does not grant blanket rights to those materials or imply NASA endorsement.
+
+The homepage career positioning is open to space and aerospace employers across software, AI, data, systems, testing and operations. NASA remains professional experience and personal history. Article links are underlined with explicit link icons; section labels, alternating surfaces and a persistent section navigation make the long page easier to navigate.
