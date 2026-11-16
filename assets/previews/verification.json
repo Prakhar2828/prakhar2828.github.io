@@ -1,0 +1,73 @@
+{
+  "verified_on": "2026-11-16",
+  "method": "Direct browser inspection and unaltered screenshots of the current destinations; continuous timestamped UI capture for all three videos.",
+  "projects": [
+    {
+      "project": "Asteria",
+      "recording_source": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
+      "video": "assets/tours/asteria-20261116.mp4",
+      "video_sha256": "fe1603175a673d8dbf2842fe7776f1825014bdda3e9c1db8abdca09b207281ac",
+      "chapters_verified": 5,
+      "result": "Replaced with current interface capture",
+      "card_source": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
+      "card_image": "assets/previews/asteria-home-20261116.jpg",
+      "card_image_sha256": "d4ec1053a703e68e02aceeb98860e093063d51e10eb84a905c1505d87c40f8b5",
+      "card_capture": "Unmodified browser screenshot"
+    },
+    {
+      "project": "A2 MissionLab",
+      "recording_source": "https://prakhar2828.github.io/a2-missionlab/mission.html",
+      "video": "assets/tours/a2-20261116.mp4",
+      "video_sha256": "dbdb43e222a051507853bf207e9ff6a86bcec8de44ae6c4773a0a80d94c558c5",
+      "chapters_verified": 4,
+      "result": "Replaced with current interface capture",
+      "card_source": "https://prakhar2828.github.io/a2-missionlab/",
+      "card_image": "assets/previews/missionlab-home-20261116.jpg",
+      "card_image_sha256": "3185e5e66cdb50e117fddd81c551204ba9dc7c7fd42590223b07d98c8d7cf924",
+      "card_capture": "Unmodified browser screenshot"
+    },
+    {
+      "project": "Wind VISION",
+      "recording_source": "https://prakhar2828.github.io/wind-vision.html#live-reconstruction",
+      "video": "assets/tours/wind-20261116.mp4",
+      "video_sha256": "9c1970daa3dbe367334bcb54b76a30fa35e9b80b915ac0eab8fa2cf4432cd144",
+      "chapters_verified": 4,
+      "result": "Replaced with current interface capture",
+      "card_source": "wind-vision.html#live-reconstruction",
+      "card_image": "assets/previews/wind-explorer-20261116.jpg",
+      "card_image_sha256": "2e617b5dd1018da54c9aa1c0f5b356a541b2ce5b82ab7ea8f566ce93d3e6c15d",
+      "card_capture": "Unmodified browser screenshot"
+    }
+  ],
+  "other_visuals": [
+    {
+      "project": "cmapss",
+      "result": "Explicitly labeled concept illustration; no app screenshot or measured curve claimed"
+    },
+    {
+      "project": "goat",
+      "result": "Explicitly labeled concept illustration; no app screenshot or measured curve claimed"
+    },
+    {
+      "project": "Langley maintenance",
+      "result": "Redrawn result summaries; already labeled with benchmark split and retrospective scope"
+    },
+    {
+      "project": "Wind saved figures",
+      "result": "Original notebook PNGs verified against the published provenance hashes; not interface screenshots"
+    },
+    {
+      "project": "Social share image",
+      "result": "Designed portfolio artwork, not presented as an app screenshot"
+    },
+    {
+      "project": "Football highlights",
+      "source": "https://www.youtube.com/watch?v=4nIEGQK1qj8",
+      "result": "Public YouTube title, creator, thumbnail and 3:25 runtime checked directly. Replaced the misnamed AVIF file with the actual JPEG thumbnail; corrected duration label.",
+      "asset": "assets/previews/football-highlights-20261116.jpg",
+      "sha256": "d7a0e0ba3118b9154891996761018d79d7857597caba8b9cc340e594490885da"
+    }
+  ],
+  "playback_verification": "All three MP4s load and seek successfully; all 13 settled chapter frames visually checked against current interface states and captions.",
+  "responsive_verification": "Six content pages checked at 390px; no horizontal or visible text overflow. Cards checked at 1280px with complete, uncropped screenshots."
+}

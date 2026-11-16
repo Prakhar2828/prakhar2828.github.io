@@ -25,3 +25,14 @@ html.portfolio-home{scroll-padding-top:100px}
 @media(max-width:700px){.personal-home .contact-section h2{font-size:34px;line-height:1.25;margin-top:15px}.writing-entry h3{font-size:25px}}
 /* Semantic headings use natural spacing at every size, including older component styles. */
 h1,h2,h3,h4{letter-spacing:normal!important;word-spacing:normal}
+
+/* Show complete captured viewports and identify snapshots versus illustrations. */
+.personal-home .work-picture img{height:auto;max-height:none;width:100%;object-fit:contain;object-position:top}
+.preview-caption{display:block;padding:12px 14px;border-top:1px solid #deded4;color:#365d4e;background:#f1f3eb;font:12px/1.6 var(--body);text-decoration:underline;text-underline-offset:3px}
+.personal-home .project-art{position:relative;padding-bottom:34px}
+.personal-home .concept-caption{position:absolute;left:14px;right:14px;bottom:10px;text-align:left;font:11px/1.5 var(--body);letter-spacing:normal;color:inherit}
+.personal-home .project-art .art-bottom{bottom:42px}
+.personal-home .work-row .project-art{height:auto;padding:0}
+.personal-home .work-row .project-art svg{display:block;position:static;width:100%;height:auto;transform:none}
+.personal-home .work-row .project-art .art-bottom{position:static;display:block;margin:0;padding:0 14px 8px;font:11px/1.6 var(--body);letter-spacing:normal}
+.personal-home .work-row .project-art .concept-caption{display:block;position:static;padding:0 14px 12px}

@@ -1,13 +1,13 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.000
+00:00:00.000 --> 00:00:06.053
 Field 2: observations-only estimated mean + IDW. RMSE 0.690580 m/s.
 
-00:00:06.000 --> 00:00:12.000
+00:00:06.053 --> 00:00:12.059
 Same field, direct IDW: RMSE 1.852057 m/s. The method matters.
 
-00:00:12.000 --> 00:00:18.000
+00:00:12.059 --> 00:00:20.302
 Field 948: the same estimator yields RMSE 0.667103 m/s.
 
-00:00:18.000 --> 00:00:24.000
+00:00:20.302 --> 00:00:24.000
 Inspect hidden sensor 55. These are synthetic held-out data, not a weather forecast.

@@ -1,84 +1,103 @@
 {
   "asteria": {
-    "duration_seconds": 29,
-    "capture": "Continuous timestamped browser screenshots of the working interface; real elapsed-time playback; no interpolated interface states",
+    "recorded_on": "2026-11-16",
+    "recorded_from": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
+    "encoded_duration_seconds": 30,
+    "sampling": "Actual timestamped browser screenshots sampled at roughly 8 fps. Silent video; captions are added below the captured viewport. No synthesized UI states.",
     "chapters": [
       {
         "at": 0,
-        "title": "Commission the spacecraft",
-        "caption": "BOOT, POINT and PAYLOAD_ON are acknowledged by the actual C++ model."
+        "title": "Open the public project",
+        "caption": "The actual public Asteria app, before initialization.",
+        "seek_seconds": 0
       },
       {
-        "at": 5,
-        "title": "Let protection act",
-        "caption": "A power fault triggers SAFE. Onboard protection disables the payload."
+        "at": 6.34,
+        "title": "Initialize the C++ model",
+        "caption": "Initialize the C++ / WebAssembly model: BOOT, 82% battery.",
+        "seek_seconds": 7.14
       },
       {
-        "at": 11,
-        "title": "Refuse an unsafe recovery",
-        "caption": "Recovery is rejected: the health gates are not yet satisfied."
+        "at": 12.648,
+        "title": "Send an acknowledged command",
+        "caption": "MissionOps: BOOT is acknowledged and recorded in the audit.",
+        "seek_seconds": 13.448
       },
       {
-        "at": 17,
-        "title": "Clear the source. Restore health.",
-        "caption": "Clear the fault, then advance 40 simulated minutes to recharge."
+        "at": 18.702,
+        "title": "Challenge onboard protection",
+        "caption": "FlightStack: injected undervoltage sets 15% battery and triggers SAFE.",
+        "seek_seconds": 19.502
       },
       {
-        "at": 23,
-        "title": "Recover with an audit trail",
-        "caption": "All health gates pass. RECOVER and RESUME return the model to NOMINAL."
+        "at": 24.656,
+        "title": "Inspect the rejected recovery",
+        "caption": "RECOVER is rejected: FR-08_RECOVERY. The audit preserves the refusal.",
+        "seek_seconds": 25.456
       }
     ]
   },
   "a2": {
-    "duration_seconds": 24,
-    "capture": "Continuous timestamped browser screenshots of the working interface; real elapsed-time playback; no interpolated interface states",
+    "recorded_on": "2026-11-16",
+    "recorded_from": "https://prakhar2828.github.io/a2-missionlab/mission.html",
+    "encoded_duration_seconds": 24,
+    "sampling": "Actual timestamped browser screenshots sampled at roughly 8 fps. Silent video; captions are added below the captured viewport. No synthesized UI states.",
     "chapters": [
       {
         "at": 0,
         "title": "Align the mission clock",
-        "caption": "Lunar approach: public products and mission events share one clock."
+        "caption": "Lunar approach: public products and mission events share one clock.",
+        "seek_seconds": 0
       },
       {
-        "at": 6,
+        "at": 6.395,
         "title": "Inspect the closest approach",
-        "caption": "Pericynthion: derived Moon-center distance is distinct from altitude."
+        "caption": "Pericynthion: derived Moon-center distance is distinct from altitude.",
+        "seek_seconds": 7.195
       },
       {
-        "at": 12,
+        "at": 12.431,
         "title": "Follow the return",
-        "caption": "Return corrections: mission context changes with the selected moment."
+        "caption": "Return corrections: mission context changes with the selected moment.",
+        "seek_seconds": 13.231
       },
       {
-        "at": 18,
+        "at": 18.391,
         "title": "Connect the mission to its outcome",
-        "caption": "Splashdown: finish the public mission record without inventing private telemetry."
+        "caption": "Splashdown: finish the public mission record without inventing private telemetry.",
+        "seek_seconds": 19.191
       }
     ]
   },
   "wind": {
-    "duration_seconds": 24,
-    "capture": "Continuous timestamped browser screenshots of the working interface; real elapsed-time playback; no interpolated interface states",
+    "recorded_on": "2026-11-16",
+    "recorded_from": "https://prakhar2828.github.io/wind-vision.html#live-reconstruction",
+    "encoded_duration_seconds": 24,
+    "sampling": "Actual timestamped browser screenshots sampled at roughly 8 fps. Silent video; captions are added below the captured viewport. No synthesized UI states.",
     "chapters": [
       {
         "at": 0,
         "title": "Reconstruct from observations",
-        "caption": "Field 2: observations-only estimated mean + IDW. RMSE 0.690580 m/s."
+        "caption": "Field 2: observations-only estimated mean + IDW. RMSE 0.690580 m/s.",
+        "seek_seconds": 0
       },
       {
-        "at": 6,
+        "at": 6.053,
         "title": "Compare a simpler transfer rule",
-        "caption": "Same field, direct IDW: RMSE 1.852057 m/s. The method matters."
+        "caption": "Same field, direct IDW: RMSE 1.852057 m/s. The method matters.",
+        "seek_seconds": 6.853
       },
       {
-        "at": 12,
+        "at": 12.059,
         "title": "Check another held-out example",
-        "caption": "Field 948: the same estimator yields RMSE 0.667103 m/s."
+        "caption": "Field 948: the same estimator yields RMSE 0.667103 m/s.",
+        "seek_seconds": 12.859
       },
       {
-        "at": 18,
+        "at": 20.302,
         "title": "Inspect the time histories",
-        "caption": "Inspect hidden sensor 55. These are synthetic held-out data, not a weather forecast."
+        "caption": "Inspect hidden sensor 55. These are synthetic held-out data, not a weather forecast.",
+        "seek_seconds": 21.102
       }
     ]
   }

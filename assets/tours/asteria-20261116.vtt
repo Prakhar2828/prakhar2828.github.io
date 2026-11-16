@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.340
+The actual public Asteria app, before initialization.
+
+00:00:06.340 --> 00:00:12.648
+Initialize the C++ / WebAssembly model: BOOT, 82% battery.
+
+00:00:12.648 --> 00:00:18.702
+MissionOps: BOOT is acknowledged and recorded in the audit.
+
+00:00:18.702 --> 00:00:24.656
+FlightStack: injected undervoltage sets 15% battery and triggers SAFE.
+
+00:00:24.656 --> 00:00:30.000
+RECOVER is rejected: FR-08_RECOVERY. The audit preserves the refusal.
