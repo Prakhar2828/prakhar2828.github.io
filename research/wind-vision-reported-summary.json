@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "project": "Wind VISION",
+    "publication_kind": "Public notebook and scientific-curation summary; selected original stored figures reproduced",
+    "source": {
+      "benchmark_and_parity": "https://github.com/Prakhar2828/wind-vision-research/blob/2661866ccfcc946ce7bdfc31657687ce2bff9e24/notebooks/Wind_VISION_PhysicsNeMo_FINAL_COMPLETION_20261108.ipynb",
+      "reconstruction": "https://github.com/Prakhar2828/wind-vision-research/blob/2661866ccfcc946ce7bdfc31657687ce2bff9e24/docs/scientific-curation/SCIENTIFIC_CLAIMS_AND_CAVEATS.md",
+      "figures": "wind-public-evidence-manifest.json"
+    },
+    "verification": "Inspected public stored outputs and curation records. Figures were extracted byte-for-byte. GPU training and experiment replay were not rerun for this portfolio.",
+    "data_scope": "Synthetic scalar wind fields; fixed 100-location geometry and 256 time samples. Reconstruction observes complete time histories at 40 locations and withholds 60 locations.",
+    "speed_scope": "NVIDIA L4; batch size 2; 4 warmups and 16 measured full VAE optimizer updates per arm.",
+    "reconstruction_scope": "128 development/validation fields; 872 held-out synthetic fields, 60 hidden sensors, 256 samples, 13,393,920 hidden targets.",
+    "original_research": "https://github.com/nasa/random_field_c-lfm",
+    "nasa_record": "https://ntrs.nasa.gov/citations/20250007145",
+    "code_availability": "Public implementation and notebooks: https://github.com/Prakhar2828/wind-vision-research",
+    "raw_artifacts_availability": "Selected original stored plots and notebook outputs are public. Full archive upload and restoration remain pending per archive README."
+  },
+  "optimizer_step_benchmark": [
+    {
+      "arm": "A",
+      "framework": "PyTorch",
+      "target": "Scalar frequency",
+      "median_optimizer_step_ms": 268.1946
+    },
+    {
+      "arm": "B",
+      "framework": "PhysicsNeMo wrapper",
+      "target": "Scalar frequency",
+      "median_optimizer_step_ms": 266.8803
+    },
+    {
+      "arm": "C",
+      "framework": "PyTorch",
+      "target": "Frequency vectorized",
+      "median_optimizer_step_ms": 48.5771
+    },
+    {
+      "arm": "D",
+      "framework": "PhysicsNeMo",
+      "target": "Frequency vectorized",
+      "median_optimizer_step_ms": 48.3596
+    }
+  ],
+  "reconstruction_comparison": [
+    {
+      "method": "Observation-only estimated mean + IDW",
+      "rmse_m_per_s": 0.681607
+    },
+    {
+      "method": "Flow V3 + full-residual IDW",
+      "rmse_m_per_s": 0.684632
+    },
+    {
+      "method": "VAE + full-residual IDW",
+      "rmse_m_per_s": 0.686786
+    },
+    {
+      "method": "Flow V3 without residual transfer",
+      "rmse_m_per_s": 1.550589
+    },
+    {
+      "method": "VAE posterior-mean baseline",
+      "rmse_m_per_s": 1.571237
+    }
+  ],
+  "parity": {
+    "matched_vae_gradient_tensors": 164,
+    "controlled_continuation_updates": 20
+  },
+  "reconstruction_detail": {
+    "held_out_fields": 872,
+    "hidden_targets": 13393920,
+    "selected_vs_flow_hybrid_rmse_difference_m_per_s": 0.003025,
+    "paired_bootstrap_95_percent_interval": [
+      0.00262,
+      0.003416
+    ],
+    "bootstrap_resamples": 5000,
+    "selected_method_field_wins": 612
+  },
+  "physical_fidelity": {
+    "selected_estimator_temporal_anomaly_r_squared": 0.884381,
+    "selected_estimator_temporal_variance_ratio": 0.842533,
+    "selected_estimator_adjacent_step_rms_ratio": 0.730385,
+    "unconditional_physicsnemo_v3_diagnostic": {
+      "generated_fields": 16,
+      "reference_fields": 512,
+      "temporal_variance_ratio": 0.2615,
+      "adjacent_step_rms_ratio": 0.1065
+    }
+  },
+  "boundaries": [
+    "No real-weather forecasting established",
+    "No end-to-end training speedup established",
+    "Vectorization is the speedup source, not the framework by itself",
+    "Best reported reconstruction result is an observation-only classical comparator",
+    "Generated fields were oversmoothed",
+    "Data and estimates come from different experiments; do not merge their denominators"
+  ]
+}

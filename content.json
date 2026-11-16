@@ -1,0 +1,349 @@
+{
+  "projects": [
+    {
+      "id": "asteria",
+      "n": "01",
+      "name": "Asteria",
+      "subtitle": "FlightStack & MissionOps",
+      "category": "mission",
+      "type": "INDEPENDENT \u00b7 SIMULATION",
+      "desc": "A spacecraft software laboratory, from C++ flight logic to the operator\u2019s console.",
+      "stack": [
+        "C++17",
+        "F Prime",
+        "FastAPI",
+        "Open MCT"
+      ],
+      "metric": "199",
+      "metricLabel": "local automated tests",
+      "repo": "asteria-flightstack-missionops",
+      "demo": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
+      "problem": "Mission software makes more sense when commands, vehicle behavior, fault protection and operator decisions can be explored together.",
+      "built": "I built a deterministic spacecraft model, integrated it with NASA\u2019s open-source F Prime framework, and connected command and telemetry services to a ground console. The lab includes SAFE-mode protection, guarded commands, six operational procedures, fault injection and journal replay.",
+      "proof": "The documented local release records 199 automated tests across flight, ground and API layers, 60 mapped requirements, 171 F Prime command-parity frames and 48,708 typed-port channel samples.",
+      "scope": "An independent educational simulation. The browser demo runs the C++ model through WebAssembly; it does not host the full backend or F Prime deployment. No flight qualification or real spacecraft operation is claimed.",
+      "report": "https://github.com/Prakhar2828/asteria-flightstack-missionops/blob/main/docs/technical-report.md",
+      "walkthrough": "walkthroughs.html#asteria"
+    },
+    {
+      "id": "missionlab",
+      "n": "02",
+      "name": "A2 MissionLab",
+      "subtitle": "A mission, reconstructed",
+      "category": "mission",
+      "type": "INDEPENDENT \u00b7 PUBLIC-DATA ANALYSIS",
+      "desc": "An evidence-aware Artemis II explorer connecting trajectory, systems and mission context.",
+      "stack": [
+        "Python",
+        "SPICEyPy",
+        "NumPy",
+        "JavaScript"
+      ],
+      "metric": "81",
+      "metricLabel": "public sources integrated",
+      "repo": "a2-missionlab",
+      "demo": "https://prakhar2828.github.io/a2-missionlab/",
+      "problem": "Public mission evidence is scattered across ephemerides, reporting, imagery and technical documents. Understanding a mission requires connecting those sources without inventing missing telemetry.",
+      "built": "I developed an interactive mission explorer, public-data trajectory analysis, bounded GNC and entry models, a mission library and an evidence-grounded analyst with deterministic retrieval and calculations.",
+      "proof": "The documented evidence inventory includes 81 public sources, 25 reference datasets, 24 shared mission events and eight deterministic analyst tools.",
+      "scope": "An independent reconstruction using public evidence. Source data, NASA reporting, derived calculations, models and synthetic examples remain distinct. This is not access to private Orion telemetry or NASA console decisions.",
+      "report": "https://github.com/Prakhar2828/a2-missionlab/blob/main/docs/METHODOLOGY.md",
+      "walkthrough": "walkthroughs.html#a2"
+    },
+    {
+      "id": "cmapss",
+      "n": "03",
+      "name": "C-MAPSS",
+      "subtitle": "with uncertainty attached",
+      "category": "ai",
+      "type": "INDEPENDENT \u00b7 SIMULATED DATA",
+      "desc": "A turbofan remaining-life platform that makes uncertainty part of the interface.",
+      "stack": [
+        "scikit-learn",
+        "Streamlit",
+        "Conformal prediction",
+        "CI"
+      ],
+      "metric": "100",
+      "metricLabel": "engines in FD001 test truth",
+      "repo": "CMAPSS-Predictive-Maintenance",
+      "problem": "A remaining-life estimate is more useful when an engineer can also inspect its uncertainty, sensor behavior and evaluation assumptions.",
+      "built": "I built an offline training pipeline and lightweight telemetry path using NASA\u2019s simulated FD001 turbofan data. The system combines bootstrapped tree ensembles, engine-level conformal calibration, schema checks, anomaly flags and an interactive fleet-risk dashboard.",
+      "proof": "Engine-unit separation prevents rows from the same engine leaking between fitting and calibration. Output-contract tests check RUL caps, uncertainty columns, anomaly fields and evaluation scope.",
+      "scope": "A research platform on simulated turbofan degradation, not an airline maintenance deployment. The 90% conformal level is a target, not a claim of achieved coverage."
+    },
+    {
+      "id": "goat",
+      "n": "04",
+      "name": "GOAT Lab",
+      "subtitle": "Make the assumptions visible",
+      "category": "data",
+      "type": "INDEPENDENT \u00b7 BASKETBALL ANALYTICS",
+      "desc": "Jordan or LeBron? A reproducible study of how the answer changes with your values.",
+      "stack": [
+        "Python",
+        "Streamlit",
+        "Monte Carlo",
+        "Docker"
+      ],
+      "metric": "250k",
+      "metricLabel": "constrained weight simulations",
+      "repo": "goat-lab",
+      "demo": "https://goat-lab-jordan-lebron.streamlit.app/",
+      "problem": "\u201cGreatest\u201d depends on what we choose to value. A single ranking can conceal those choices behind a deceptively precise number.",
+      "built": "I built a transparent multi-criteria comparison with league-relative normalization, peak and longevity measures, playoff context, explicit group budgets and an interactive Streamlit dashboard.",
+      "proof": "The frozen v1 release includes 250,000 hierarchy-constrained weight simulations, a fixed seed, source and artifact hashes, a model card and 32 release checks. Four alternative scaling choices split the winner 2\u20132.",
+      "scope": "The outputs describe selected scaling and value systems. Simulation shares are not objective probabilities of who is the greatest player.",
+      "report": "https://github.com/Prakhar2828/goat-lab/blob/main/docs/V1_FINAL_RESULTS.md"
+    },
+    {
+      "id": "wind",
+      "n": "05",
+      "name": "Wind VISION",
+      "subtitle": "Numerics before narratives",
+      "category": "research",
+      "type": "RESEARCH \u00b7 SYNTHETIC WIND FIELDS",
+      "desc": "Numerical reproduction, a controlled speed study, and a classical baseline that challenged the neural model.",
+      "stack": [
+        "PyTorch",
+        "PhysicsNeMo",
+        "NVIDIA L4",
+        "Scientific ML"
+      ],
+      "metric": "5.55\u00d7",
+      "metricLabel": "measured VAE optimizer-step speedup",
+      "problem": "Scientific ML needs both numerical equivalence and physically credible outputs. Faster code is useful only when the comparison isolates what changed.",
+      "built": "I reproduced constrained latent flow-matching computations in PhysicsNeMo and vectorized an analytical frequency-dependent target. I evaluated held-out synthetic wind reconstruction against classical baselines.",
+      "proof": "The public final-completion notebook records a four-arm NVIDIA L4 comparison: median full VAE optimizer-step time fell from 268.1946 ms to 48.3596 ms. It records 164 matched VAE gradient tensors and 20 controlled optimizer updates. Original stored figures show the remaining temporal and spectral-fidelity limits.",
+      "scope": "The public portable release reproduces all eight methods\u2019 metrics from frozen predictions, regenerates three classical baselines from observed sensors only, and matches seven bootstrap intervals. CUDA model inference, training and benchmark timing were not rerun. The complete historical archive remains a separate artifact.",
+      "reference": "https://ntrs.nasa.gov/citations/20250007145",
+      "report": "wind-vision.html",
+      "publicEvidence": "Public test data, frozen predictions, locked protocol, CPU replay tools and fresh-extraction receipt. Original RC2 model candidate separately included; 108 file hashes verified.",
+      "repo": "wind-vision-research",
+      "walkthrough": "walkthroughs.html#wind",
+      "release": "https://github.com/Prakhar2828/wind-vision-research/releases/tag/results-replay-v1"
+    },
+    {
+      "id": "condition",
+      "n": "06",
+      "name": "Condition monitoring",
+      "subtitle": "Signals worth investigating",
+      "category": "research",
+      "type": "RESEARCH \u00b7 CONDITION MONITORING",
+      "desc": "Vibration analysis and alert evaluation that keep generalization limits in view.",
+      "stack": [
+        "SciPy",
+        "FFT / STFT",
+        "scikit-learn",
+        "Time series"
+      ],
+      "metric": "1.52M",
+      "metricLabel": "historical compressor observations",
+      "problem": "High classification accuracy and frequent alerts can look impressive while providing little evidence of future equipment reliability.",
+      "built": "I built reproducible signal-processing and monitoring notebooks across 40 CWRU bearing recordings and MetroPT-3 compressor telemetry, with source checks, spectral features, chronological evaluation and interpretable review cards.",
+      "proof": "Bearing balanced accuracy was 97.2% on a held-out-load split and 52.8% on a harder unseen-defect condition. Retrospective compressor comparisons included time-shifted negative controls to expose misleading event matches.",
+      "scope": "Research and teaching work, not an operational NASA maintenance system. Seeded laboratory faults and four historical compressor events do not establish prospective failure prediction.",
+      "reference": "https://archive.ics.uci.edu/dataset/791/metropt+3+dataset"
+    }
+  ],
+  "roles": [
+    {
+      "org": "NASA Langley",
+      "unit": "Center Operations Directorate",
+      "role": "AI-Augmented Software Engineer \u00b7 OSTEM Intern",
+      "date": "AUG 2026 \u2014 PRESENT",
+      "summary": "Helping modernize the software behind center operations.",
+      "tags": [
+        "Enterprise software",
+        "Data integrity",
+        "Release verification"
+      ],
+      "bullets": [
+        "Contributed to four fall application releases as part of the modernization team, covering relocation, facility closure, safety personnel and environmental-review workflows.",
+        "Tested and repaired CFML, SQL and JavaScript behavior; worked with process owners on persistence, permissions, notifications and production feedback.",
+        "Prepared test plans, migration and write-back guidance, configuration-management materials and user documentation."
+      ],
+      "extra": "Additional work includes scientific-ML reproduction and condition-monitoring research. An AI safety-asset and deferred-maintenance Tiger Team assignment is scoped as investigation and expert-reviewed decision support; a deployed safety system is not claimed."
+    },
+    {
+      "org": "Gruve / AI-Fabrik",
+      "unit": "AI infrastructure",
+      "role": "Software & AI Engineering Intern",
+      "date": "NOV 2025 \u2014 AUG 2026",
+      "summary": "Making inference benchmarks useful enough to trust.",
+      "tags": [
+        "GPU inference",
+        "Kubernetes",
+        "Benchmark automation"
+      ],
+      "bullets": [
+        "Benchmarked eight model families across vLLM, SGLang and TensorRT-LLM on three GPU classes, producing 102 structured result files.",
+        "Automated a result-processing and reporting cycle from 90 to 15 minutes, an 83% reduction for that task.",
+        "Identified a workload mismatch that shortened outputs by approximately 77%; corrected comparisons and supported backward-compatible result parsing."
+      ],
+      "extra": "The intensive final documented phase ran May\u2013August 2026. Authored 12 implementation-option PRs and a documentation PR for review; these were open at handoff. Engine recommendations remained specific to model and workload."
+    },
+    {
+      "org": "Aurelia Vitals",
+      "unit": "Wearable data research",
+      "role": "Data Science Intern",
+      "date": "OCT \u2014 DEC 2025",
+      "summary": "Turning disconnected sensor streams into repeatable analysis.",
+      "tags": [
+        "Data engineering",
+        "Signal quality",
+        "Time-series analysis"
+      ],
+      "bullets": [
+        "Integrated five physiological and environmental source families into a reusable 608-row, 41-column daily analysis table.",
+        "Normalized timestamps, aggregated observations, aligned features and developed repeatable signal-processing and exploratory prediction notebooks.",
+        "Explored cycle and sleep patterns with explicit evaluation and dataset limits."
+      ],
+      "extra": "Research analyses used wearable and environmental observations. They are not clinically validated diagnostic or treatment tools; unsupported noise-reduction and time-savings claims are omitted."
+    },
+    {
+      "org": "Ironbook AI",
+      "unit": "AltoGPT",
+      "role": "Machine Learning / AI Engineering Intern",
+      "date": "JUN \u2014 SEP 2025",
+      "summary": "Connecting energy analytics to a human review workflow.",
+      "tags": [
+        "XGBoost",
+        "Anomaly detection",
+        "LLM orchestration"
+      ],
+      "bullets": [
+        "Worked on a facilities-energy prototype combining a 48-hour XGBoost forecast, PELT change-point detection and Isolation Forest anomalies.",
+        "Connected analytical outputs to interactive agent explanations and structured maintenance-review cards.",
+        "The prototype demonstration produced 22 review tickets and two proactive recommendations."
+      ],
+      "extra": "A demonstration using mock historical and weather inputs, not a confirmed customer production deployment. The available evidence does not establish sole ownership of every module."
+    }
+  ],
+  "repositories": [
+    [
+      "asteria-flightstack-missionops",
+      "Mission",
+      "Spacecraft software and operations simulation"
+    ],
+    [
+      "a2-missionlab",
+      "Mission",
+      "Public-evidence Artemis II explorer"
+    ],
+    [
+      "CMAPSS-Predictive-Maintenance",
+      "AI / Data",
+      "Turbofan remaining-life and uncertainty platform"
+    ],
+    [
+      "goat-lab",
+      "AI / Data",
+      "Basketball rankings and sensitivity analysis"
+    ],
+    [
+      "GenAI_Web_App",
+      "Team project",
+      "Flask / React traffic simulation with local LLM navigation"
+    ],
+    [
+      "S2025_Project-GenAI-Traffic-Sim",
+      "Team project",
+      "Companion traffic-simulation coursework repository"
+    ],
+    [
+      "NYC-Shootings-LLM",
+      "Coursework",
+      "Historical-data exploration, model cards and ethical limitations"
+    ],
+    [
+      "SP500-predictor",
+      "Coursework",
+      "Historical market time-series modeling exercise"
+    ],
+    [
+      "TextRank-Demonstration",
+      "Algorithms",
+      "NLP co-occurrence graphs and weighted PageRank"
+    ],
+    [
+      "DroughtDetection",
+      "Algorithms",
+      "Java weather observations and rainfall summaries"
+    ],
+    [
+      "CollectionDisplay-Graphical-User-Interface",
+      "Algorithms",
+      "Java collections and graphical interaction"
+    ],
+    [
+      "Tower-Of-Hanoi-Solver",
+      "Algorithms",
+      "Recursive puzzle solving"
+    ],
+    [
+      "SchellingSimulation",
+      "Algorithms",
+      "Agent-based simulation in Java"
+    ],
+    [
+      "WhackAShape-Implementation",
+      "Algorithms",
+      "Java GUI and linked / array bag structures"
+    ],
+    [
+      "Board-Game-DataBase",
+      "Algorithms",
+      "Object-oriented game hierarchy and tests"
+    ],
+    [
+      "Tetris-AI-Brain",
+      "Algorithms",
+      "Java board-state representation and tests"
+    ],
+    [
+      "SpotifyPlaylistAlgorithm",
+      "Algorithms",
+      "Playlist data structures and input / output fixtures"
+    ],
+    [
+      "3844f23-writing-digital-media",
+      "Learning reference",
+      "Course resource; original curriculum credited to its authors"
+    ],
+    [
+      "wind-vision-research",
+      "Research",
+      "Wind-field implementation, saved notebook outputs and scientific curation"
+    ],
+    [
+      "wind-vision-archive",
+      "Research",
+      "Historical archive metadata; runnable results release linked"
+    ]
+  ],
+  "personal": {
+    "source": "Direct user confirmation, November 15, 2026",
+    "teams": [
+      "Toronto Maple Leafs",
+      "Dallas Cowboys",
+      "Dallas Mavericks",
+      "Liverpool",
+      "Ferrari F1"
+    ],
+    "music": {
+      "artist": "Michael Jackson",
+      "favorite_album": "Off the Wall",
+      "favorite_songs": [
+        "Rock with You",
+        "Bad",
+        "Don\u2019t Stop \u2019Til You Get Enough",
+        "Get on the Floor"
+      ]
+    },
+    "tennis": {
+      "participation": "Competed with Rice Club Tennis and represented Rice at Texas Sectionals as a player",
+      "favorite_player": "Roger Federer"
+    }
+  }
+}

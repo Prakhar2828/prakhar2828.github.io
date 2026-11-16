@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-study]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-study]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.study-panel').forEach(panel=>{panel.hidden=panel.id!=='study-'+button.dataset.study;});}));

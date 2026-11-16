@@ -1,0 +1,98 @@
+[
+  {
+    "id": "asteria",
+    "name": "Asteria",
+    "category": "MISSION OPERATIONS / C++17 + WEBASSEMBLY",
+    "title": "Command. Acknowledge. Protect.",
+    "intro": "A flight/ground software lab that makes command outcomes, autonomous protection and operational evidence visible.",
+    "demo": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
+    "source": "https://github.com/Prakhar2828/asteria-flightstack-missionops",
+    "limit": "Independent software lab with synthetic telemetry. No flight qualification or network/orbital latency claim.",
+    "steps": [
+      [
+        "Commission the spacecraft",
+        "I separate spacecraft state from ground intent. BOOT, POINT and PAYLOAD_ON establish a nominal operating sequence; the power and payload channels then respond to the running C++ model.",
+        "Boot \u2192 point \u2192 enable payload. The live C++ model enters NOMINAL."
+      ],
+      [
+        "Make success an acknowledged outcome",
+        "The procedure advances on acknowledgements. The audit retains the requested command and its terminal outcome, so an operator can inspect what the flight process accepted. The captured audit also records the later fault injection.",
+        "Command success requires an acknowledgement; the audit keeps the evidence."
+      ],
+      [
+        "Let onboard protection act",
+        "I inject battery undervoltage and advance the clock. The authoritative state machine enters SAFE, sheds payload load and holds recovery behind battery, fault-clearance and healthy-dwell gates. A button click cannot bypass those conditions.",
+        "Undervoltage forces SAFE. Recovery waits on independent health gates."
+      ],
+      [
+        "Reconstruct instead of guessing",
+        "The recorded journal supports a telemetry replay and a generated debrief: seed 42, seven received records, four acknowledged commands and a last received SAFE mode. Replay reads evidence without reissuing commands.",
+        "Replay and debrief read recorded evidence without re-executing commands."
+      ]
+    ]
+  },
+  {
+    "id": "a2",
+    "name": "A2 MissionLab",
+    "category": "MISSION ANALYSIS / PUBLIC EVIDENCE + PHYSICS",
+    "title": "One mission. Traceable reasoning.",
+    "intro": "A public-data mission reconstruction connecting trajectory geometry, engineering models and the precision of the available evidence.",
+    "demo": "https://prakhar2828.github.io/a2-missionlab/",
+    "source": "https://github.com/Prakhar2828/a2-missionlab",
+    "limit": "Independent public-data reconstruction. Models are educational approximations; no private Orion telemetry or targeting solution is represented.",
+    "steps": [
+      [
+        "Align the mission clock",
+        "I put public trajectory products and events on a shared mission clock. At pericynthion, the explorer shows the refined 8,281.938 km Moon-center distance and labels the result as derived from public trajectory data.",
+        "Public trajectory data yields a derived 8,281.938 km Moon-center distance."
+      ],
+      [
+        "Propagate a decision",
+        "I change the RTC2 magnitude from the reported 5.3 ft/s to a modeled 5.4 ft/s. The two-body response changes to about 296 km separation at the reference entry epoch. Direction and propagated consequences stay explicitly modeled.",
+        "Change 5.3 to 5.4 ft/s: the what-if response becomes about 296 km."
+      ],
+      [
+        "Keep geometry and heating distinct",
+        "At analysis +85 s, the entry experience connects a reconstructed altitude/speed profile to bounded atmosphere, Mach and heating models. Derived flight geometry and modeled external heating keep separate evidence labels.",
+        "Entry geometry is reconstructed; heat flux remains an explicitly bounded model."
+      ],
+      [
+        "Expose the evidence policy",
+        "The technical report carries methods, source provenance and the reported/derived/modeled/inferred/unknown taxonomy. I make the boundary inspectable so an attractive visualization does not imply knowledge the public record lacks.",
+        "Reported, derived, modeled and unknown claims remain distinct in the report."
+      ]
+    ]
+  },
+  {
+    "id": "wind",
+    "name": "Wind VISION",
+    "category": "RESEARCH ENGINEERING / NUMERICS + REPRODUCIBILITY",
+    "title": "Faster. Compared. Reproducible.",
+    "intro": "A numerical optimization study paired with a held-out reconstruction comparison that gives the simpler baseline its due.",
+    "demo": "wind-vision.html",
+    "source": "https://github.com/Prakhar2828/wind-vision-research",
+    "limit": "Synthetic, single-component, fixed-geometry spatial reconstruction. CUDA timings are historical; CPU replay rescores frozen neural predictions and regenerates classical baselines.",
+    "steps": [
+      [
+        "Separate framework from optimization",
+        "I compare four arms: original and vectorized target computation in PyTorch and PhysicsNeMo. The raw timing medians attribute the 5.55\u00d7 A/D ratio to frequency vectorization, rather than the framework name.",
+        "Four arms separate frequency-vectorization gains from framework changes."
+      ],
+      [
+        "Respect the stronger baseline",
+        "The observation-only estimated-mean + IDW method wins at 0.681607 m/s RMSE over 872 held-out fields. I report that result instead of treating a neural prior as automatically superior.",
+        "A classical baseline wins: 0.681607 m/s over 872 held-out fields."
+      ],
+      [
+        "Inspect what RMSE can hide",
+        "Original unconditional-generation figures expose missing high-frequency power and oversmoothing. Those generation diagnostics are a separate experiment from the held-out reconstruction score.",
+        "Spectral diagnostics expose oversmoothing that a single error metric can hide."
+      ],
+      [
+        "Let someone else check the numbers",
+        "The public release supplies test data, frozen predictions, a locked protocol and pinned CPU dependencies. A fresh extraction matches all eight methods, regenerates three baselines and reproduces seven bootstrap intervals. GPU training is outside that verified scope.",
+        "Fresh CPU replay matches eight methods, three regenerated baselines and seven intervals."
+      ]
+    ]
+  }
+]

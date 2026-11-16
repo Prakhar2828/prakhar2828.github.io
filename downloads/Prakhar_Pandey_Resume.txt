@@ -1,0 +1,46 @@
+PRAKHAR PANDEY
+Software and AI Engineer | Mission Software and Operations
+Houston, TX | U.S. Citizen | (540) 998-4016 | prakhar280805@gmail.com
+LinkedIn: https://www.linkedin.com/in/prakhar-pandey-470702263
+GitHub: https://github.com/Prakhar2828
+Portfolio: https://prakhar-pandey-portfolio.yoofis.chatgpt.site
+
+EDUCATION
+Rice University | Master of Data Science | GPA 3.66/4.00 | Expected Dec 2027
+Virginia Tech | B.S. Computer Science, Data-Centric Computing | Cum Laude | GPA 3.42/4.00 | May 2025
+
+EXPERIENCE
+NASA Langley Research Center | Aug 2026 - Present
+AI-Augmented Software Engineer, OSTEM Intern | Center Operations Directorate
+- Supported four fall production releases for center-operations applications, validating workflows, permissions, notifications and SQL Server/Oracle synchronization with application owners.
+- Authored test plans, cutover/write-back guidance and release documentation across a five-application portfolio; completed a 69-case FSPL test suite.
+- Selected for the Risk-Informed Decision - Deferred Maintenance Tiger Team; scoped human-reviewed hazard-evidence extraction, asset matching and maintenance-data feasibility.
+
+Gruve / AI-Fabrik | Nov 2025 - Aug 2026
+Software and AI Engineering Intern
+- Benchmarked eight model families across vLLM, SGLang and TensorRT-LLM on three GPU classes, producing 102 structured results for workload-specific engine selection.
+- Automated reporting from 90 to 15 minutes per cycle; corrected a token-setting mismatch that shortened outputs by about 77% and invalidated comparisons.
+
+Aurelia Vitals | Oct - Dec 2025
+Data Science Intern
+- Integrated five wearable and environmental data sources into a reusable 608-row, 41-feature daily table with timestamp normalization, aggregation and repeatable analysis.
+
+Ironbook AI | Jun - Sep 2025
+Machine Learning and AI Engineering Intern
+- Developed analytical components for a facilities-energy prototype combining 48-hour XGBoost forecasts, PELT change-point detection, Isolation Forest and MLflow with agent-generated review cards.
+
+SELECTED ENGINEERING PROJECTS
+Asteria FlightStack and MissionOps | https://github.com/Prakhar2828/asteria-flightstack-missionops
+- Built a C++17 spacecraft simulation with F Prime, FastAPI and Open MCT, protected SAFE mode, guarded commands, six procedures and journal replay.
+- Verified 199 local tests and 60 mapped requirements, including 171 F Prime command-parity frames and 48,708 typed-port telemetry samples.
+
+A2 MissionLab | https://github.com/Prakhar2828/a2-missionlab
+- Built an Artemis II public-data explorer integrating 81 sources and 25 datasets, Python/SPICE geometry and bounded mission models; implemented eight deterministic analysis tools and a 146-record searchable evidence index.
+
+Wind VISION | https://github.com/Prakhar2828/wind-vision-research
+- Reproduced constrained latent flow-matching computations in PhysicsNeMo, matching 164 VAE gradient tensors and 20 controlled updates; vectorized the coherence target for a measured 5.55x L4 optimizer-step speedup (268.19 to 48.36 ms), with physical-fidelity limits documented.
+
+TECHNICAL SKILLS
+Languages: Python, C++17, SQL, JavaScript, Java, CFML, Bash
+Mission and verification: F Prime, Open MCT, SPICEyPy, simulation, fault handling, requirements traceability, automated testing
+AI and systems: PyTorch, scikit-learn, SciPy, FastAPI, Docker, Kubernetes, GitHub Actions, Oracle, SQL Server, PostgreSQL

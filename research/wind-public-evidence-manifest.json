@@ -1,0 +1,50 @@
+{
+  "repository_commit": "2661866ccfcc946ce7bdfc31657687ce2bff9e24",
+  "figures": [
+    {
+      "asset": "assets/wind-generated-time-histories.png",
+      "description": "Saved time histories at sensor 35. Independent generated samples, not paired predictions.",
+      "sha256": "6453ca0be3c31e58a851fe34e25c4e2e447c2b73d9c386640d9c1df7f69205c4",
+      "source_notebook": "https://github.com/Prakhar2828/wind-vision-research/blob/2661866ccfcc946ce7bdfc31657687ce2bff9e24/notebooks/Wind_VISION_PhysicsNeMo_FINAL_COMPLETION_20261108.ipynb",
+      "source_notebook_git_blob": "8f6be213ead2b89e5cf5ba9863a8449a495c48c4",
+      "cell_index_zero_based": 4,
+      "output_index_zero_based": 4,
+      "operation": "Extracted original embedded PNG bytes; no figure modification or experiment execution."
+    },
+    {
+      "asset": "assets/wind-variance-and-step-rms.png",
+      "description": "Generated-to-reference temporal variance and adjacent-step RMS. 16 fields per generator, 512 reference fields.",
+      "sha256": "95d2b3454640b2adc342a424b2ab1818a62c24d72757a88ddbe97b2400976c98",
+      "source_notebook": "https://github.com/Prakhar2828/wind-vision-research/blob/2661866ccfcc946ce7bdfc31657687ce2bff9e24/notebooks/Wind_VISION_PhysicsNeMo_FINAL_COMPLETION_20261108.ipynb",
+      "source_notebook_git_blob": "8f6be213ead2b89e5cf5ba9863a8449a495c48c4",
+      "cell_index_zero_based": 4,
+      "output_index_zero_based": 1,
+      "operation": "Extracted original embedded PNG bytes; no figure modification or experiment execution."
+    },
+    {
+      "asset": "assets/wind-spectral-band-power.png",
+      "description": "Hann-windowed spectral band-power ratios. Mid and high frequency energy remains far below the reference.",
+      "sha256": "f68295f4fa1ce77e2c798c31f04d163466e9602ae34e681fa7d5c4ce58f7db52",
+      "source_notebook": "https://github.com/Prakhar2828/wind-vision-research/blob/2661866ccfcc946ce7bdfc31657687ce2bff9e24/notebooks/Wind_VISION_PhysicsNeMo_FINAL_COMPLETION_20261108.ipynb",
+      "source_notebook_git_blob": "8f6be213ead2b89e5cf5ba9863a8449a495c48c4",
+      "cell_index_zero_based": 4,
+      "output_index_zero_based": 2,
+      "operation": "Extracted original embedded PNG bytes; no figure modification or experiment execution."
+    }
+  ],
+  "review": "Original saved figures unchanged. Fresh-extraction CPU results replay passed November 15, 2026. GPU experiments not rerun.",
+  "archive_status": "Public portable results release complete and CPU replay tested; full historical master remote restoration remains untested and is not a dependency of this release.",
+  "portable_public_release": {
+    "url": "https://github.com/Prakhar2828/wind-vision-research/releases/tag/results-replay-v1",
+    "source_commit": "dbec5dac186d10b5caee4ff0af58e089a55ceb4a",
+    "status": "fresh-extraction CPU replay PASS",
+    "receipt": "wind-portable-replay-receipt.json",
+    "neural_predictions_regenerated": false,
+    "gpu_experiments_rerun": false,
+    "ubuntu_verification": {
+      "url": "https://github.com/Prakhar2828/wind-vision-research/actions/runs/43785507504",
+      "status": "PASS",
+      "receipt": "wind-ubuntu-replay-receipt.json"
+    }
+  }
+}

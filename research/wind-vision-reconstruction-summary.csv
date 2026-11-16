@@ -1,0 +1,7 @@
+# Summary from public notebook outputs and scientific curation; not a fresh experiment or raw sample table.
+method,rmse_m_per_s
+Observation-only estimated mean + IDW,0.681607
+Flow V3 + full-residual IDW,0.684632
+VAE + full-residual IDW,0.686786
+Flow V3 without residual transfer,1.550589
+VAE posterior-mean baseline,1.571237

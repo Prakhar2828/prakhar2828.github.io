@@ -1,0 +1,6 @@
+# Summary from public notebook outputs and scientific curation; not a fresh experiment or raw sample table.
+arm,framework,target,median_optimizer_step_ms
+A,PyTorch,Scalar frequency,268.1946
+B,PhysicsNeMo wrapper,Scalar frequency,266.8803
+C,PyTorch,Frequency vectorized,48.5771
+D,PhysicsNeMo,Frequency vectorized,48.3596
