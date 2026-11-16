@@ -4,6 +4,7 @@
 
 Personal engineering portfolio covering NASA Langley center operations experience, software/AI internships, independent mission software, mission analysis, research and personal interests.
 
+- [Predictive maintenance at NASA Langley](https://prakhar2828.github.io/langley-maintenance.html)
 - [Asteria architecture and engineering decisions](https://prakhar2828.github.io/asteria.html)
 - [A2 MissionLab architecture and engineering decisions](https://prakhar2828.github.io/missionlab.html)
 - [Project walkthroughs](https://prakhar2828.github.io/walkthroughs.html)
@@ -19,7 +20,8 @@ To edit through GitHub, open the relevant file, select Edit, make the change and
 Main files:
 - `index.html`: homepage, experience, personal interests and project cards.
 - `app.js`: project-dialog content and browser interactions.
-- `style.css`, `experience.css`: visual styling and responsive layouts.
+- `style.css`, `experience.css`, `human.css`: styling, responsive layouts, and the personal visual direction.
+- `langley-maintenance.html`, `maintenance.css`: public summary of the CWRU / MetroPT-3 predictive-maintenance study developed during the Langley internship. Code, notebooks, raw data and working files remain unpublished.
 - `mission-lab.js`, `vendor/asteria/`: actual C++/WebAssembly homepage fault-and-recovery exercise, runtime adapter, attribution and license.
 - `asteria.html`, `missionlab.html`: visual engineering case studies.
 - `wind-explorer.js`, `wind-math.mjs`, `wind-explorer.css`: browser classical-reconstruction demonstration on two real held-out synthetic fields. The estimator does not receive hidden truth.
@@ -36,7 +38,9 @@ A custom domain is optional. Add one only after registering it and verifying own
 
 ## Evidence and attribution
 
-The interactive homepage lazily loads its C++/WebAssembly model when started. It commissions the spacecraft, injects a power fault, rejects premature recovery, explicitly advances 40 simulated minutes to recharge, and recovers after the health gates pass. The visitor can export the actual journal. After completing the bounded exercise, use Restart to run it again. Browser activity pauses when hidden.
+The homepage uses Prakhar’s own supplied writing and verified public Medium / LinkedIn posts as context. It introduces his Rice-to-NASA story, career aspirations, professional work and interests in football, tennis, teams and music. It links his own public football highlights and training videos; the thumbnail comes from the linked YouTube upload.
+
+The expandable Asteria exercise on the homepage lazily loads its C++/WebAssembly model when started. It commissions the spacecraft, injects a power fault, rejects premature recovery, explicitly advances 40 simulated minutes to recharge, and recovers after the health gates pass. The visitor can export the actual journal. After completing the bounded exercise, use Restart to run it again. Browser activity pauses when hidden.
 
 Three continuous interface recordings include chapter navigation, editorial captions, VTT files, transcripts and frame-timestamp/hash provenance. They are actual browser captures rather than sequences of separately posed screenshots.
 

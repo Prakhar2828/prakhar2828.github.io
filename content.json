@@ -4,10 +4,10 @@
       "id": "asteria",
       "n": "01",
       "name": "Asteria",
-      "subtitle": "FlightStack & MissionOps",
+      "subtitle": "Learning how flight and ground software work together",
       "category": "mission",
-      "type": "INDEPENDENT \u00b7 SIMULATION",
-      "desc": "A spacecraft software laboratory, from C++ flight logic to the operator\u2019s console.",
+      "type": "Independent project · Spacecraft software",
+      "desc": "I wanted to understand what happens between an operator sending a command and a spacecraft actually acting on it. So I built a small flight-software lab with commands, faults, recovery checks and a ground console.",
       "stack": [
         "C++17",
         "F Prime",
@@ -19,7 +19,7 @@
       "repo": "asteria-flightstack-missionops",
       "demo": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
       "problem": "Mission software makes more sense when commands, vehicle behavior, fault protection and operator decisions can be explored together.",
-      "built": "I built a deterministic spacecraft model, integrated it with NASA\u2019s open-source F Prime framework, and connected command and telemetry services to a ground console. The lab includes SAFE-mode protection, guarded commands, six operational procedures, fault injection and journal replay.",
+      "built": "I built a deterministic spacecraft model, integrated it with NASA’s open-source F Prime framework, and connected command and telemetry services to a ground console. The lab includes SAFE-mode protection, guarded commands, six operational procedures, fault injection and journal replay.",
       "proof": "The documented local release records 199 automated tests across flight, ground and API layers, 60 mapped requirements, 171 F Prime command-parity frames and 48,708 typed-port channel samples.",
       "scope": "An independent educational simulation. The browser demo runs the C++ model through WebAssembly; it does not host the full backend or F Prime deployment. No flight qualification or real spacecraft operation is claimed.",
       "report": "https://github.com/Prakhar2828/asteria-flightstack-missionops/blob/main/docs/technical-report.md",
@@ -30,10 +30,10 @@
       "id": "missionlab",
       "n": "02",
       "name": "A2 MissionLab",
-      "subtitle": "A mission, reconstructed",
+      "subtitle": "Working through the engineering behind Artemis II",
       "category": "mission",
-      "type": "INDEPENDENT \u00b7 PUBLIC-DATA ANALYSIS",
-      "desc": "An evidence-aware Artemis II explorer connecting trajectory, systems and mission context.",
+      "type": "Independent project · Public-data mission analysis",
+      "desc": "I built MissionLab because I wanted to understand the engineering behind a mission I cared about. It brings public trajectory data, mission events and my engineering models into one place.",
       "stack": [
         "Python",
         "SPICEyPy",
@@ -56,10 +56,10 @@
       "id": "cmapss",
       "n": "03",
       "name": "C-MAPSS",
-      "subtitle": "with uncertainty attached",
+      "subtitle": "Estimating engine life, including what I don’t know",
       "category": "ai",
-      "type": "INDEPENDENT \u00b7 SIMULATED DATA",
-      "desc": "A turbofan remaining-life platform that makes uncertainty part of the interface.",
+      "type": "Independent project · Simulated turbofan data",
+      "desc": "Using NASA’s simulated turbofan data, I built a remaining-life model and checked its uncertainty. I wanted the recommendation to show how much confidence it deserved.",
       "stack": [
         "scikit-learn",
         "Streamlit",
@@ -70,7 +70,7 @@
       "metricLabel": "engines in FD001 test truth",
       "repo": "CMAPSS-Predictive-Maintenance",
       "problem": "A remaining-life estimate is more useful when an engineer can also inspect its uncertainty, sensor behavior and evaluation assumptions.",
-      "built": "I built an offline training pipeline and lightweight telemetry path using NASA\u2019s simulated FD001 turbofan data. The system combines bootstrapped tree ensembles, engine-level conformal calibration, schema checks, anomaly flags and an interactive fleet-risk dashboard.",
+      "built": "I built an offline training pipeline and lightweight telemetry path using NASA’s simulated FD001 turbofan data. The system combines bootstrapped tree ensembles, engine-level conformal calibration, schema checks, anomaly flags and an interactive fleet-risk dashboard.",
       "proof": "Engine-unit separation prevents rows from the same engine leaking between fitting and calibration. Output-contract tests check RUL caps, uncertainty columns, anomaly fields and evaluation scope.",
       "scope": "A research platform on simulated turbofan degradation, not an airline maintenance deployment. The 90% conformal level is a target, not a claim of achieved coverage."
     },
@@ -78,10 +78,10 @@
       "id": "goat",
       "n": "04",
       "name": "GOAT Lab",
-      "subtitle": "Make the assumptions visible",
+      "subtitle": "A basketball argument turned into a data project",
       "category": "data",
-      "type": "INDEPENDENT \u00b7 BASKETBALL ANALYTICS",
-      "desc": "Jordan or LeBron? A reproducible study of how the answer changes with your values.",
+      "type": "Personal project · Basketball analytics",
+      "desc": "Jordan or LeBron? I built a way to see how the answer changes when you change what you value. It’s a sports project, but also a reminder that a ranking starts with somebody’s assumptions.",
       "stack": [
         "Python",
         "Streamlit",
@@ -92,9 +92,9 @@
       "metricLabel": "constrained weight simulations",
       "repo": "goat-lab",
       "demo": "https://goat-lab-jordan-lebron.streamlit.app/",
-      "problem": "\u201cGreatest\u201d depends on what we choose to value. A single ranking can conceal those choices behind a deceptively precise number.",
+      "problem": "“Greatest” depends on what we choose to value. A single ranking can conceal those choices behind a deceptively precise number.",
       "built": "I built a transparent multi-criteria comparison with league-relative normalization, peak and longevity measures, playoff context, explicit group budgets and an interactive Streamlit dashboard.",
-      "proof": "The frozen v1 release includes 250,000 hierarchy-constrained weight simulations, a fixed seed, source and artifact hashes, a model card and 32 release checks. Four alternative scaling choices split the winner 2\u20132.",
+      "proof": "The frozen v1 release includes 250,000 hierarchy-constrained weight simulations, a fixed seed, source and artifact hashes, a model card and 32 release checks. Four alternative scaling choices split the winner 2–2.",
       "scope": "The outputs describe selected scaling and value systems. Simulation shares are not objective probabilities of who is the greatest player.",
       "report": "https://github.com/Prakhar2828/goat-lab/blob/main/docs/V1_FINAL_RESULTS.md"
     },
@@ -102,22 +102,22 @@
       "id": "wind",
       "n": "05",
       "name": "Wind VISION",
-      "subtitle": "Numerics before narratives",
+      "subtitle": "Reproducing a wind model and checking what really improved",
       "category": "research",
-      "type": "RESEARCH \u00b7 SYNTHETIC WIND FIELDS",
-      "desc": "Numerical reproduction, a controlled speed study, and a classical baseline that challenged the neural model.",
+      "type": "Research · Synthetic wind fields",
+      "desc": "I reproduced constrained wind-field models, sped up one numerical calculation, and tested the results against a simpler method. The simpler method won the held-out reconstruction comparison.",
       "stack": [
         "PyTorch",
         "PhysicsNeMo",
         "NVIDIA L4",
         "Scientific ML"
       ],
-      "metric": "5.55\u00d7",
+      "metric": "5.55×",
       "metricLabel": "measured VAE optimizer-step speedup",
       "problem": "Scientific ML needs both numerical equivalence and physically credible outputs. Faster code is useful only when the comparison isolates what changed.",
       "built": "I reproduced constrained latent flow-matching computations in PhysicsNeMo and vectorized an analytical frequency-dependent target. I evaluated held-out synthetic wind reconstruction against classical baselines.",
       "proof": "The public final-completion notebook records a four-arm NVIDIA L4 comparison: median full VAE optimizer-step time fell from 268.1946 ms to 48.3596 ms. It records 164 matched VAE gradient tensors and 20 controlled optimizer updates. Original stored figures show the remaining temporal and spectral-fidelity limits.",
-      "scope": "The public portable release reproduces all eight methods\u2019 metrics from frozen predictions, regenerates three classical baselines from observed sensors only, and matches seven bootstrap intervals. CUDA model inference, training and benchmark timing were not rerun. The complete historical archive remains a separate artifact.",
+      "scope": "The public portable release reproduces all eight methods’ metrics from frozen predictions, regenerates three classical baselines from observed sensors only, and matches seven bootstrap intervals. CUDA model inference, training and benchmark timing were not rerun. The complete historical archive remains a separate artifact.",
       "reference": "https://ntrs.nasa.gov/citations/20250007145",
       "report": "wind-vision.html",
       "publicEvidence": "Public test data, frozen predictions, locked protocol, CPU replay tools and fresh-extraction receipt. Original RC2 model candidate separately included; 108 file hashes verified.",
@@ -128,53 +128,55 @@
     {
       "id": "condition",
       "n": "06",
-      "name": "Condition monitoring",
-      "subtitle": "Signals worth investigating",
+      "name": "Predictive maintenance at Langley",
+      "subtitle": "CWRU bearings & MetroPT-3 compressor data",
       "category": "research",
-      "type": "RESEARCH \u00b7 CONDITION MONITORING",
-      "desc": "Vibration analysis and alert evaluation that keep generalization limits in view.",
+      "type": "NASA Langley · Public-data study",
+      "desc": "I built a hands-on study of bearing vibration and compressor telemetry at Langley. The most useful part was seeing what happened when I tested the models beyond the easy case.",
       "stack": [
         "SciPy",
         "FFT / STFT",
         "scikit-learn",
         "Time series"
       ],
-      "metric": "1.52M",
-      "metricLabel": "historical compressor observations",
-      "problem": "High classification accuracy and frequent alerts can look impressive while providing little evidence of future equipment reliability.",
-      "built": "I built reproducible signal-processing and monitoring notebooks across 40 CWRU bearing recordings and MetroPT-3 compressor telemetry, with source checks, spectral features, chronological evaluation and interpretable review cards.",
-      "proof": "Bearing balanced accuracy was 97.2% on a held-out-load split and 52.8% on a harder unseen-defect condition. Retrospective compressor comparisons included time-shifted negative controls to expose misleading event matches.",
-      "scope": "Research and teaching work, not an operational NASA maintenance system. Seeded laboratory faults and four historical compressor events do not establish prospective failure prediction.",
-      "reference": "https://archive.ics.uci.edu/dataset/791/metropt+3+dataset"
+      "metric": "40 + 1.52M",
+      "metricLabel": "bearing recordings + compressor readings",
+      "problem": "A model flagging an anomaly is only a starting point. I wanted to understand what someone maintaining the equipment could reasonably do with it.",
+      "built": "I built an executed analysis and workshop around 40 CWRU bearing recordings and 1,516,948 MetroPT-3 readings. I checked the source signals, compared classifiers and simple physical rules, and turned deviations into review cards.",
+      "proof": "Bearing balanced accuracy was 97.2% on held-out 3 HP windows and 52.8% on an unseen defect-size test. A pressure rule produced 93 retrospective review episodes versus 387 for Isolation Forest. Time-shift checks showed why matching four historical events was not enough to establish prediction.",
+      "scope": "Public benchmark research developed during my Langley internship. No deployment on NASA equipment, verified prevented failures or measured NASA savings. Code and notebooks are not public yet.",
+      "reference": "https://archive.ics.uci.edu/dataset/791/metropt+3+dataset",
+      "caseStudy": "langley-maintenance.html"
     }
   ],
   "roles": [
     {
       "org": "NASA Langley",
       "unit": "Center Operations Directorate",
-      "role": "AI-Augmented Software Engineer \u00b7 OSTEM Intern",
-      "date": "AUG 2026 \u2014 PRESENT",
-      "summary": "Selected for safety-focused AI. Delivering dependable operations software.",
+      "role": "AI-Augmented Software Engineer · OSTEM Intern",
+      "date": "AUG 2026 — PRESENT",
+      "summary": "Learning what it means to build software people at NASA rely on.",
       "tags": [
         "Tiger Team selection",
         "Operations software",
         "Verification & validation"
       ],
       "bullets": [
-        "Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision \u2013 Deferred Maintenance Tiger Team, investigating human-reviewed AI support for hazard evidence, asset matching and deferred-maintenance feasibility.",
+        "Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision – Deferred Maintenance Tiger Team, investigating human-reviewed AI support for hazard evidence, asset matching and deferred-maintenance feasibility.",
+        "Built a predictive-maintenance study and workshop using CWRU bearing vibration and MetroPT-3 compressor telemetry, including harder generalization tests, physical indicators and checks on misleading historical event matches.",
         "Contributed to four fall production application releases within a five-application modernization portfolio, covering relocation, facility closure, safety personnel and environmental review.",
         "Prepared and executed a 69-case safety-personnel verification program across seven suites; re-authored a 55-case environmental-workflow test plan covering permissions, reviews, determinations and notifications.",
         "Verified controlled Oracle / SQL Server write-back behavior across nine Oracle tables and checked facility-closure data parity across 6,459 room records in the test environment.",
         "Authored 25+ test, migration, configuration-management and handoff artifacts across the portfolio, working with process owners and database administrators on release readiness and production feedback."
       ],
-      "extra": "The Tiger Team assignment concerns a proposed AI Safety Asset Identifier: extracting hazard evidence, matching MAXIMO assets, presenting confidence-ranked findings for expert review and assessing maintenance-data feasibility. Work is scoped as investigation and design. The center context is approximately 200 facilities and 3,400 civil-service / contractor personnel; those are center-wide figures, not application-user counts. Additional research includes Wind VISION and condition monitoring."
+      "extra": "The applications support a center with roughly 200 facilities and 3,400 civil-service and contractor personnel; those are center-wide figures. My migration work entered controlled testing. The Tiger Team work investigates human-reviewed hazard evidence, MAXIMO asset matching and maintenance-data feasibility. I’m also developing public-data studies in predictive maintenance and Wind VISION."
     },
     {
       "org": "Gruve / AI-Fabrik",
       "unit": "AI infrastructure",
       "role": "Software & AI Engineering Intern",
-      "date": "NOV 2025 \u2014 AUG 2026",
-      "summary": "Making inference benchmarks useful enough to trust.",
+      "date": "NOV 2025 — AUG 2026",
+      "summary": "I learned how easily a benchmark can compare the wrong things.",
       "tags": [
         "GPU inference",
         "Kubernetes",
@@ -186,14 +188,14 @@
         "Identified a workload mismatch that shortened outputs by approximately 77%; corrected comparisons and supported backward-compatible result parsing.",
         "Developed 12 independently reviewable implementation-option pull requests across CLI, configuration, readiness, retry and run-tracking designs, plus a documented engineering handoff; the PRs remained open at handoff."
       ],
-      "extra": "Beyond the benchmark corpus, I evaluated maintainability and failure behavior through competing implementation options. On Qwen3-32B-FP8 at concurrency 16, the documented comparison was 1,746 versus 1,343 tokens/s for vLLM and SGLang; on Qwen3.6-27B at concurrency 1, TensorRT-LLM versus vLLM time-to-first-token was 1.68 versus 0.26 seconds. These are model/workload-specific findings. The intensive final documented phase ran May\u2013August 2026. Candidate PRs were open at handoff."
+      "extra": "Beyond the benchmark corpus, I evaluated maintainability and failure behavior through competing implementation options. On Qwen3-32B-FP8 at concurrency 16, the documented comparison was 1,746 versus 1,343 tokens/s for vLLM and SGLang; on Qwen3.6-27B at concurrency 1, TensorRT-LLM versus vLLM time-to-first-token was 1.68 versus 0.26 seconds. These are model/workload-specific findings. The intensive final documented phase ran May–August 2026. Candidate PRs were open at handoff."
     },
     {
       "org": "Aurelia Vitals",
       "unit": "Wearable data research",
       "role": "Data Science Intern",
-      "date": "OCT \u2014 DEC 2025",
-      "summary": "Turning disconnected sensor streams into repeatable analysis.",
+      "date": "OCT — DEC 2025",
+      "summary": "Making different sensor streams usable together.",
       "tags": [
         "Data engineering",
         "Signal quality",
@@ -210,8 +212,8 @@
       "org": "Ironbook AI",
       "unit": "AltoGPT",
       "role": "Machine Learning / AI Engineering Intern",
-      "date": "JUN \u2014 SEP 2025",
-      "summary": "Connecting energy analytics to a human review workflow.",
+      "date": "JUN — SEP 2025",
+      "summary": "Turning energy data into something a person could review.",
       "tags": [
         "XGBoost",
         "Anomaly detection",
@@ -328,7 +330,7 @@
     ]
   ],
   "personal": {
-    "source": "Direct user confirmation, November 15, 2026",
+    "source": "Direct user writing and confirmations, November 15–16, 2026",
     "teams": [
       "Toronto Maple Leafs",
       "Dallas Cowboys",
@@ -342,21 +344,29 @@
       "favorite_songs": [
         "Rock with You",
         "Bad",
-        "Don\u2019t Stop \u2019Til You Get Enough",
+        "Don’t Stop ’Til You Get Enough",
         "Get on the Floor"
       ]
     },
     "tennis": {
       "participation": "Competed with Rice Club Tennis and represented Rice at Texas Sectionals as a player",
       "favorite_player": "Roger Federer"
+    },
+    "football": {
+      "channel": "https://www.youtube.com/@prakharpandey4499/videos",
+      "highlights": "https://www.youtube.com/watch?v=4nIEGQK1qj8",
+      "training": "https://www.youtube.com/watch?v=REKCUX3Vd1k"
+    },
+    "writing": {
+      "medium": "https://medium.com/@prakhar280805/a-model-can-be-open-and-still-be-inaccessible-57031c48c913"
     }
   },
   "professional_distinctions": {
-    "nasa_selection": "Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision \u2013 Deferred Maintenance Tiger Team.",
+    "nasa_selection": "Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision – Deferred Maintenance Tiger Team.",
     "work_authorization": "U.S. citizen",
     "honors": [
       "Cum Laude",
-      "Dean\u2019s List: Spring 2023, Fall 2023, Fall 2024 and Spring 2025"
+      "Dean’s List: Spring 2023, Fall 2023, Fall 2024 and Spring 2025"
     ],
     "training": "Confluent data streaming / Apache Kafka fundamentals and responsible-AI security, compliance and governance training."
   }
