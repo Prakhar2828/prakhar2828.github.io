@@ -15,3 +15,5 @@ body{font-size:16px;line-height:1.8}h1,h2,h3,h4{font-family:Georgia,'Times New R
 @media(max-width:1000px){.personal-home .header nav{gap:15px}.section-nav{gap:20px}}
 @media(max-width:700px){.section-nav{padding:12px 7%;gap:22px}.section-nav>span{display:none}.section-nav a{font-size:12px;min-height:30px;display:flex;align-items:center}.personal-story,.personal-home .work-section,.writing-section,.personal-home .outside-section,.personal-home .archive-section{padding-top:42px;padding-bottom:45px}.personal-home .section-note{font-size:12px;margin-bottom:20px}.writing-entry h3 a{line-height:1.5}.writing-entry h3 .link-icon{font-size:15px}}
 @media(max-width:700px){.section-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px 12px;padding-top:8px;padding-bottom:8px}.section-nav a{justify-content:center;font-size:11px;min-height:29px}}
+
+html.portfolio-home{scroll-padding-top:100px}
