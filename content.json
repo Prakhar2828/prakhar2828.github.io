@@ -152,18 +152,20 @@
       "unit": "Center Operations Directorate",
       "role": "AI-Augmented Software Engineer \u00b7 OSTEM Intern",
       "date": "AUG 2026 \u2014 PRESENT",
-      "summary": "Helping modernize the software behind center operations.",
+      "summary": "Selected for safety-focused AI. Delivering dependable operations software.",
       "tags": [
-        "Enterprise software",
-        "Data integrity",
-        "Release verification"
+        "Tiger Team selection",
+        "Operations software",
+        "Verification & validation"
       ],
       "bullets": [
-        "Contributed to four fall application releases as part of the modernization team, covering relocation, facility closure, safety personnel and environmental-review workflows.",
-        "Tested and repaired CFML, SQL and JavaScript behavior; worked with process owners on persistence, permissions, notifications and production feedback.",
-        "Prepared test plans, migration and write-back guidance, configuration-management materials and user documentation."
+        "Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision \u2013 Deferred Maintenance Tiger Team, investigating human-reviewed AI support for hazard evidence, asset matching and deferred-maintenance feasibility.",
+        "Contributed to four fall production application releases within a five-application modernization portfolio, covering relocation, facility closure, safety personnel and environmental review.",
+        "Prepared and executed a 69-case safety-personnel verification program across seven suites; re-authored a 55-case environmental-workflow test plan covering permissions, reviews, determinations and notifications.",
+        "Verified controlled Oracle / SQL Server write-back behavior across nine Oracle tables and checked facility-closure data parity across 6,459 room records in the test environment.",
+        "Authored 25+ test, migration, configuration-management and handoff artifacts across the portfolio, working with process owners and database administrators on release readiness and production feedback."
       ],
-      "extra": "Additional work includes scientific-ML reproduction and condition-monitoring research. An AI safety-asset and deferred-maintenance Tiger Team assignment is scoped as investigation and expert-reviewed decision support; a deployed safety system is not claimed."
+      "extra": "The Tiger Team assignment concerns a proposed AI Safety Asset Identifier: extracting hazard evidence, matching MAXIMO assets, presenting confidence-ranked findings for expert review and assessing maintenance-data feasibility. Work is scoped as investigation and design. The center context is approximately 200 facilities and 3,400 civil-service / contractor personnel; those are center-wide figures, not application-user counts. Additional research includes Wind VISION and condition monitoring."
     },
     {
       "org": "Gruve / AI-Fabrik",
@@ -179,9 +181,10 @@
       "bullets": [
         "Benchmarked eight model families across vLLM, SGLang and TensorRT-LLM on three GPU classes, producing 102 structured result files.",
         "Automated a result-processing and reporting cycle from 90 to 15 minutes, an 83% reduction for that task.",
-        "Identified a workload mismatch that shortened outputs by approximately 77%; corrected comparisons and supported backward-compatible result parsing."
+        "Identified a workload mismatch that shortened outputs by approximately 77%; corrected comparisons and supported backward-compatible result parsing.",
+        "Developed 12 independently reviewable implementation-option pull requests across CLI, configuration, readiness, retry and run-tracking designs, plus a documented engineering handoff; the PRs remained open at handoff."
       ],
-      "extra": "The intensive final documented phase ran May\u2013August 2026. Authored 12 implementation-option PRs and a documentation PR for review; these were open at handoff. Engine recommendations remained specific to model and workload."
+      "extra": "Beyond the benchmark corpus, I evaluated maintainability and failure behavior through competing implementation options. On Qwen3-32B-FP8 at concurrency 16, the documented comparison was 1,746 versus 1,343 tokens/s for vLLM and SGLang; on Qwen3.6-27B at concurrency 1, TensorRT-LLM versus vLLM time-to-first-token was 1.68 versus 0.26 seconds. These are model/workload-specific findings. The intensive final documented phase ran May\u2013August 2026. Candidate PRs were open at handoff."
     },
     {
       "org": "Aurelia Vitals",
@@ -345,5 +348,14 @@
       "participation": "Competed with Rice Club Tennis and represented Rice at Texas Sectionals as a player",
       "favorite_player": "Roger Federer"
     }
+  },
+  "professional_distinctions": {
+    "nasa_selection": "Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision \u2013 Deferred Maintenance Tiger Team.",
+    "work_authorization": "U.S. citizen",
+    "honors": [
+      "Cum Laude",
+      "Dean\u2019s List: Spring 2023, Fall 2023, Fall 2024 and Spring 2025"
+    ],
+    "training": "Confluent data streaming / Apache Kafka fundamentals and responsible-AI security, compliance and governance training."
   }
 }

@@ -3,7 +3,7 @@ Software and AI Engineer | Mission Software and Operations
 Houston, TX | U.S. Citizen | (540) 998-4016 | prakhar280805@gmail.com
 LinkedIn: https://www.linkedin.com/in/prakhar-pandey-470702263
 GitHub: https://github.com/Prakhar2828
-Portfolio: https://prakhar-pandey-portfolio.yoofis.chatgpt.site
+Portfolio: https://prakhar2828.github.io/
 
 EDUCATION
 Rice University | Master of Data Science | GPA 3.66/4.00 | Expected Dec 2027
@@ -12,9 +12,9 @@ Virginia Tech | B.S. Computer Science, Data-Centric Computing | Cum Laude | GPA 
 EXPERIENCE
 NASA Langley Research Center | Aug 2026 - Present
 AI-Augmented Software Engineer, OSTEM Intern | Center Operations Directorate
-- Supported four fall production releases for center-operations applications, validating workflows, permissions, notifications and SQL Server/Oracle synchronization with application owners.
-- Authored test plans, cutover/write-back guidance and release documentation across a five-application portfolio; completed a 69-case FSPL test suite.
-- Selected for the Risk-Informed Decision - Deferred Maintenance Tiger Team; scoped human-reviewed hazard-evidence extraction, asset matching and maintenance-data feasibility.
+- Selected by NASA Langley Deputy Director Allen Kilgore for the Risk-Informed Decision - Deferred Maintenance Tiger Team to investigate human-reviewed hazard-to-asset AI and maintenance-data feasibility.
+- Supported four fall production releases across a five-application portfolio, validating workflows, permissions and Oracle / SQL Server data consistency.
+- Authored 25+ testing, migration and release artifacts; completed a 69-case safety-personnel test suite and controlled write-back checks on nine Oracle tables.
 
 Gruve / AI-Fabrik | Nov 2025 - Aug 2026
 Software and AI Engineering Intern
