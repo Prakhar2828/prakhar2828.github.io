@@ -17,3 +17,11 @@ body{font-size:16px;line-height:1.8}h1,h2,h3,h4{font-family:Georgia,'Times New R
 @media(max-width:700px){.section-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px 12px;padding-top:8px;padding-bottom:8px}.section-nav a{justify-content:center;font-size:11px;min-height:29px}}
 
 html.portfolio-home{scroll-padding-top:100px}
+
+/* Typography must not inherit the old oversized display treatment. */
+.personal-home h1,.personal-home h2,.personal-home h3,.personal-home h4,.case-page h1,.case-page h2,.case-page h3,.case-page h4,.wind-hero h1,.research-section h2,.tour-hero h1,.tour-heading h2,.tour-heading h2 em{letter-spacing:-.015em;word-spacing:normal}
+.personal-home .contact-section h2{letter-spacing:normal;word-spacing:normal;line-height:1.25;margin:24px 0 0;max-width:100%;overflow-wrap:normal}
+.personal-home .email-link{letter-spacing:normal;line-height:1.6}.writing-entry h3{line-height:1.5}.writing-entry>p{line-height:1.9}.wind-summary strong{letter-spacing:normal}
+@media(max-width:700px){.personal-home .contact-section h2{font-size:34px;line-height:1.25;margin-top:15px}.writing-entry h3{font-size:25px}}
+/* Semantic headings use natural spacing at every size, including older component styles. */
+h1,h2,h3,h4{letter-spacing:normal!important;word-spacing:normal}
