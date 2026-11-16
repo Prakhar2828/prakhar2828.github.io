@@ -4,6 +4,8 @@
 
 Personal engineering portfolio covering NASA Langley center operations experience, software/AI internships, independent mission software, mission analysis, research and personal interests.
 
+- [Asteria architecture and engineering decisions](https://prakhar2828.github.io/asteria.html)
+- [A2 MissionLab architecture and engineering decisions](https://prakhar2828.github.io/missionlab.html)
 - [Project walkthroughs](https://prakhar2828.github.io/walkthroughs.html)
 - [Wind VISION research note](https://prakhar2828.github.io/wind-vision.html)
 - [Reproducible Wind VISION release](https://github.com/Prakhar2828/wind-vision-research/releases/tag/results-replay-v1)
@@ -17,7 +19,11 @@ To edit through GitHub, open the relevant file, select Edit, make the change and
 Main files:
 - `index.html`: homepage, experience, personal interests and project cards.
 - `app.js`: project-dialog content and browser interactions.
-- `style.css`: visual styling and responsive layouts.
+- `style.css`, `experience.css`: visual styling and responsive layouts.
+- `mission-lab.js`, `vendor/asteria/`: actual C++/WebAssembly homepage fault-and-recovery exercise, runtime adapter, attribution and license.
+- `asteria.html`, `missionlab.html`: visual engineering case studies.
+- `wind-explorer.js`, `wind-math.mjs`, `wind-explorer.css`: browser classical-reconstruction demonstration on two real held-out synthetic fields. The estimator does not receive hidden truth.
+- `assets/portfolio-share.jpg`: 1200 × 630 social preview rendered from HTML/CSS with the supplied portrait.
 - `walkthroughs.html`, `.css`, `.js`: guided project tours.
 - `wind-vision.html`, `.css`, `.js`: research case study.
 - `downloads/`: public resume files.
@@ -29,6 +35,10 @@ Main files:
 A custom domain is optional. Add one only after registering it and verifying ownership. Domain registration/renewal are separate from free Pages hosting. If the hostname changes, update canonical/social URLs, the Person structured-data URL, `robots.txt` and `sitemap.xml`.
 
 ## Evidence and attribution
+
+The interactive homepage lazily loads its C++/WebAssembly model when started. It commissions the spacecraft, injects a power fault, rejects premature recovery, explicitly advances 40 simulated minutes to recharge, and recovers after the health gates pass. The visitor can export the actual journal. After completing the bounded exercise, use Restart to run it again. Browser activity pauses when hidden.
+
+Three continuous interface recordings include chapter navigation, editorial captions, VTT files, transcripts and frame-timestamp/hash provenance. They are actual browser captures rather than sequences of separately posed screenshots.
 
 Independent projects distinguish simulations, public NASA/ESA evidence, derived quantities, models and unknowns. Wind VISION credits the upstream NASA constrained latent flow-matching research. CPU results replay passed on macOS and clean Ubuntu; no fresh GPU training or benchmark campaign is claimed. No internal NASA operational data or intern exit deck is included.
 

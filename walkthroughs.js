@@ -2,7 +2,7 @@
 document.querySelectorAll('[data-tour-video]').forEach(video=>{
   const id=video.dataset.tourVideo;
   const buttons=[...document.querySelectorAll('[data-tour="'+id+'"]')];
-  const update=()=>buttons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===Math.min(3,Math.floor(video.currentTime/8)))));
+  const update=()=>buttons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===Math.max(0,buttons.findLastIndex(b=>video.currentTime>=Number(b.dataset.time))))));
   let preparation;
   // Small, complete local media blobs allow reliable seeking on hosts without HTTP Range support.
   const prepare=()=>{
@@ -29,7 +29,7 @@ document.querySelectorAll('[data-tour-video]').forEach(video=>{
   };
   video.addEventListener('timeupdate',update);
   buttons.forEach(button=>button.addEventListener('click',async()=>{
-    try{await prepare();video.currentTime=Number(button.dataset.step)*8;update();}
+    try{await prepare();video.currentTime=Number(button.dataset.time);update();}
     catch{unavailable();}
   }));
   if('IntersectionObserver' in window){

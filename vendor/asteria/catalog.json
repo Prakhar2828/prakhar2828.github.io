@@ -1,0 +1,263 @@
+{
+  "channels": {
+    "time": [
+      "Mission elapsed time",
+      "s"
+    ],
+    "battery_soc": [
+      "Battery state of charge",
+      "%"
+    ],
+    "bus_voltage": [
+      "Bus voltage",
+      "V"
+    ],
+    "solar_power": [
+      "Solar generation",
+      "W"
+    ],
+    "load_power": [
+      "Power consumption",
+      "W"
+    ],
+    "temperature": [
+      "Bus temperature",
+      "\u00b0C"
+    ],
+    "heater": [
+      "Heater enabled",
+      "bool"
+    ],
+    "attitude": [
+      "Attitude angle",
+      "deg"
+    ],
+    "angular_rate": [
+      "Angular rate",
+      "deg/s"
+    ],
+    "wheel_rpm": [
+      "Reaction wheel",
+      "rpm"
+    ],
+    "target_angle": [
+      "Pointing target",
+      "deg"
+    ],
+    "sensor_age": [
+      "Sensor age",
+      "s"
+    ],
+    "adcs_enabled": [
+      "ADCS enabled",
+      "bool"
+    ],
+    "link_connected": [
+      "Link connected",
+      "bool"
+    ],
+    "link_age": [
+      "Link loss duration",
+      "s"
+    ],
+    "packets": [
+      "Downlink packets",
+      "count"
+    ],
+    "payload_enabled": [
+      "Payload enabled",
+      "bool"
+    ],
+    "payload_data": [
+      "Payload data",
+      "MB"
+    ],
+    "ticks": [
+      "Scheduler ticks",
+      "count"
+    ],
+    "missed_deadlines": [
+      "Injected missed deadlines",
+      "count"
+    ],
+    "commands_accepted": [
+      "Accepted onboard commands",
+      "count"
+    ],
+    "commands_rejected": [
+      "Rejected onboard commands",
+      "count"
+    ],
+    "orbit_phase": [
+      "Illustrative orbit phase",
+      "turn"
+    ],
+    "sunlight": [
+      "In sunlight",
+      "bool"
+    ],
+    "healthy": [
+      "Recovery health gate",
+      "bool"
+    ],
+    "healthy_dwell": [
+      "Healthy dwell time",
+      "s"
+    ]
+  },
+  "commands": {
+    "BOOT": [
+      "operator",
+      null
+    ],
+    "SAFE": [
+      "operator",
+      null
+    ],
+    "RECOVER": [
+      "operator",
+      null
+    ],
+    "RESUME": [
+      "operator",
+      null
+    ],
+    "PAYLOAD_ON": [
+      "operator",
+      null
+    ],
+    "PAYLOAD_OFF": [
+      "operator",
+      null
+    ],
+    "HEATER_ON": [
+      "operator",
+      null
+    ],
+    "HEATER_OFF": [
+      "operator",
+      null
+    ],
+    "ADCS_ON": [
+      "operator",
+      null
+    ],
+    "ADCS_OFF": [
+      "operator",
+      null
+    ],
+    "POINT": [
+      "operator",
+      [
+        -180,
+        180
+      ]
+    ],
+    "DESATURATE": [
+      "operator",
+      null
+    ],
+    "INJECT_FAULT": [
+      "administrator",
+      [
+        0,
+        5
+      ]
+    ],
+    "CLEAR_FAULTS": [
+      "administrator",
+      null
+    ]
+  },
+  "rules": [
+    [
+      "FR-01",
+      "Only operator or administrator may issue flight commands."
+    ],
+    [
+      "FR-02",
+      "Fault injection and clearing require administrator training role."
+    ],
+    [
+      "FR-03",
+      "Command IDs must be unique within a run; retries never execute twice."
+    ],
+    [
+      "FR-04",
+      "Flight commands require an available downlink/uplink."
+    ],
+    [
+      "FR-05",
+      "Payload requires NOMINAL mode."
+    ],
+    [
+      "FR-06",
+      "Payload requires battery \u226540%, temperature <40\u00b0C, fresh sensor, rate \u22640.5\u00b0/s."
+    ],
+    [
+      "FR-07",
+      "Heater requires NOMINAL, battery \u226530%, temperature <15\u00b0C."
+    ],
+    [
+      "FR-08",
+      "Recovery requires SAFE, all faults cleared, health within limits, 10 s dwell."
+    ],
+    [
+      "FR-09",
+      "Resume requires RECOVERY and healthy spacecraft."
+    ],
+    [
+      "FR-10",
+      "Pointing requires NOMINAL, active ADCS, valid sensor and angle in \u00b1180\u00b0."
+    ]
+  ],
+  "procedures": {
+    "commission": {
+      "title": "Commission the spacecraft",
+      "steps": [
+        "BOOT",
+        "POINT",
+        "PAYLOAD_ON"
+      ]
+    },
+    "power": {
+      "title": "Recover from low power",
+      "steps": [
+        "CLEAR_FAULTS",
+        "RECOVER",
+        "RESUME"
+      ]
+    },
+    "thermal": {
+      "title": "Recover from overheating",
+      "steps": [
+        "CLEAR_FAULTS",
+        "RECOVER",
+        "RESUME"
+      ]
+    },
+    "comms": {
+      "title": "Restore communications",
+      "steps": [
+        "CLEAR_FAULTS"
+      ]
+    },
+    "attitude": {
+      "title": "Recover attitude control",
+      "steps": [
+        "CLEAR_FAULTS",
+        "DESATURATE",
+        "RECOVER",
+        "RESUME"
+      ]
+    },
+    "shutdown": {
+      "title": "Secure the spacecraft",
+      "steps": [
+        "PAYLOAD_OFF",
+        "HEATER_OFF",
+        "SAFE"
+      ]
+    }
+  }
+}

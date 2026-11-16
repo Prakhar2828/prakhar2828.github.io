@@ -1,0 +1,33 @@
+{
+  "source_repository": "https://github.com/Prakhar2828/asteria-flightstack-missionops",
+  "source_commit": "0fe963ba7850d84c0976cc5614f0484f99bc6071",
+  "files": {
+    "flight-wasm.js": {
+      "url": "https://prakhar2828.github.io/asteria-flightstack-missionops/flight-wasm.js",
+      "sha256": "3b77795223b4832829317a933ea1af08ed48aab3f5c8c09d8081a5f0df811616",
+      "bytes": 14246
+    },
+    "flight-wasm.wasm": {
+      "url": "https://prakhar2828.github.io/asteria-flightstack-missionops/flight-wasm.wasm",
+      "sha256": "37f0610911e070d44762b21ada7ce4f1d0fd830f6aab47504887925994d665ad",
+      "bytes": 138998
+    },
+    "catalog.json": {
+      "url": "https://prakhar2828.github.io/asteria-flightstack-missionops/catalog.json",
+      "sha256": "efb3819dfb1fd70c8565c16e1021f020ba1ac80d97a1fc4a1846445338063d7b",
+      "bytes": 4537
+    },
+    "runtime-core.mjs": {
+      "source": "public-demo/runtime-core.mjs",
+      "sha256": "f5dacbb4d128a7bfca2a4e9a62d525116b2d9a6dc109574e7d2cfe0589f57789"
+    },
+    "LICENSE.txt": {
+      "source": "LICENSE",
+      "sha256": "8a7646aabc4dbc9661b810ea6fac503a112176a6404b53af97954a1856c8252c"
+    },
+    "flight.hpp": {
+      "source": "flight/flight.hpp",
+      "sha256": "93465aa62e1ac99e59c8684bf503e2db87eb3e6720bbdba96aed42839fcc6a43"
+    }
+  }
+}

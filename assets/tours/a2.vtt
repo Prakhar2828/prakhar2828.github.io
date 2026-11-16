@@ -1,13 +1,13 @@
 WEBVTT
 
-00:00.000 --> 00:08.000
-Public trajectory data yields a derived 8,281.938 km Moon-center distance.
+00:00:00.000 --> 00:00:06.000
+Lunar approach: public products and mission events share one clock.
 
-00:08.000 --> 00:16.000
-Change 5.3 to 5.4 ft/s: the what-if response becomes about 296 km.
+00:00:06.000 --> 00:00:12.000
+Pericynthion: derived Moon-center distance is distinct from altitude.
 
-00:16.000 --> 00:24.000
-Entry geometry is reconstructed; heat flux remains an explicitly bounded model.
+00:00:12.000 --> 00:00:18.000
+Return corrections: mission context changes with the selected moment.
 
-00:24.000 --> 00:32.000
-Reported, derived, modeled and unknown claims remain distinct in the report.
+00:00:18.000 --> 00:00:24.000
+Splashdown: finish the public mission record without inventing private telemetry.

@@ -1,0 +1,85 @@
+{
+  "asteria": {
+    "duration_seconds": 29,
+    "capture": "Continuous timestamped browser screenshots of the working interface; real elapsed-time playback; no interpolated interface states",
+    "chapters": [
+      {
+        "at": 0,
+        "title": "Commission the spacecraft",
+        "caption": "BOOT, POINT and PAYLOAD_ON are acknowledged by the actual C++ model."
+      },
+      {
+        "at": 5,
+        "title": "Let protection act",
+        "caption": "A power fault triggers SAFE. Onboard protection disables the payload."
+      },
+      {
+        "at": 11,
+        "title": "Refuse an unsafe recovery",
+        "caption": "Recovery is rejected: the health gates are not yet satisfied."
+      },
+      {
+        "at": 17,
+        "title": "Clear the source. Restore health.",
+        "caption": "Clear the fault, then advance 40 simulated minutes to recharge."
+      },
+      {
+        "at": 23,
+        "title": "Recover with an audit trail",
+        "caption": "All health gates pass. RECOVER and RESUME return the model to NOMINAL."
+      }
+    ]
+  },
+  "a2": {
+    "duration_seconds": 24,
+    "capture": "Continuous timestamped browser screenshots of the working interface; real elapsed-time playback; no interpolated interface states",
+    "chapters": [
+      {
+        "at": 0,
+        "title": "Align the mission clock",
+        "caption": "Lunar approach: public products and mission events share one clock."
+      },
+      {
+        "at": 6,
+        "title": "Inspect the closest approach",
+        "caption": "Pericynthion: derived Moon-center distance is distinct from altitude."
+      },
+      {
+        "at": 12,
+        "title": "Follow the return",
+        "caption": "Return corrections: mission context changes with the selected moment."
+      },
+      {
+        "at": 18,
+        "title": "Connect the mission to its outcome",
+        "caption": "Splashdown: finish the public mission record without inventing private telemetry."
+      }
+    ]
+  },
+  "wind": {
+    "duration_seconds": 24,
+    "capture": "Continuous timestamped browser screenshots of the working interface; real elapsed-time playback; no interpolated interface states",
+    "chapters": [
+      {
+        "at": 0,
+        "title": "Reconstruct from observations",
+        "caption": "Field 2: observations-only estimated mean + IDW. RMSE 0.690580 m/s."
+      },
+      {
+        "at": 6,
+        "title": "Compare a simpler transfer rule",
+        "caption": "Same field, direct IDW: RMSE 1.852057 m/s. The method matters."
+      },
+      {
+        "at": 12,
+        "title": "Check another held-out example",
+        "caption": "Field 948: the same estimator yields RMSE 0.667103 m/s."
+      },
+      {
+        "at": 18,
+        "title": "Inspect the time histories",
+        "caption": "Inspect hidden sensor 55. These are synthetic held-out data, not a weather forecast."
+      }
+    ]
+  }
+}

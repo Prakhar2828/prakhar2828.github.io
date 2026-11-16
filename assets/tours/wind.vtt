@@ -1,13 +1,13 @@
 WEBVTT
 
-00:00.000 --> 00:08.000
-Four arms separate frequency-vectorization gains from framework changes.
+00:00:00.000 --> 00:00:06.000
+Field 2: observations-only estimated mean + IDW. RMSE 0.690580 m/s.
 
-00:08.000 --> 00:16.000
-A classical baseline wins: 0.681607 m/s over 872 held-out fields.
+00:00:06.000 --> 00:00:12.000
+Same field, direct IDW: RMSE 1.852057 m/s. The method matters.
 
-00:16.000 --> 00:24.000
-Spectral diagnostics expose oversmoothing that a single error metric can hide.
+00:00:12.000 --> 00:00:18.000
+Field 948: the same estimator yields RMSE 0.667103 m/s.
 
-00:24.000 --> 00:32.000
-Fresh CPU replay matches eight methods, three regenerated baselines and seven intervals.
+00:00:18.000 --> 00:00:24.000
+Inspect hidden sensor 55. These are synthetic held-out data, not a weather forecast.
