@@ -1,9 +1,9 @@
 {
   "asteria": {
-    "recorded_on": "2026-11-16",
+    "recorded_on": "2026-11-20",
     "recorded_from": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
     "encoded_duration_seconds": 30,
-    "sampling": "Actual timestamped browser screenshots sampled at roughly 8 fps. Silent video; captions are added below the captured viewport. No synthesized UI states.",
+    "sampling": "Continuous browser capture at eight frames per second. English WebVTT captions.",
     "chapters": [
       {
         "at": 0,
@@ -12,28 +12,28 @@
         "seek_seconds": 0
       },
       {
-        "at": 6.34,
+        "at": 6,
         "title": "Initialize the C++ model",
         "caption": "Initialize the C++ / WebAssembly model: BOOT, 82% battery.",
-        "seek_seconds": 7.14
+        "seek_seconds": 7
       },
       {
-        "at": 12.648,
+        "at": 12,
         "title": "Send an acknowledged command",
         "caption": "MissionOps: BOOT is acknowledged and recorded in the audit.",
-        "seek_seconds": 13.448
+        "seek_seconds": 13
       },
       {
-        "at": 18.702,
+        "at": 18,
         "title": "Challenge onboard protection",
         "caption": "FlightStack: injected undervoltage sets 15% battery and triggers SAFE.",
-        "seek_seconds": 19.502
+        "seek_seconds": 19
       },
       {
-        "at": 24.656,
+        "at": 24,
         "title": "Inspect the rejected recovery",
         "caption": "RECOVER is rejected: FR-08_RECOVERY. The audit preserves the refusal.",
-        "seek_seconds": 25.456
+        "seek_seconds": 25
       }
     ]
   },

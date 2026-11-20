@@ -59,18 +59,19 @@
       "subtitle": "Estimating engine life, including what I don’t know",
       "category": "ai",
       "type": "Independent project · Simulated turbofan data",
-      "desc": "Using NASA’s simulated turbofan data, I built a remaining-life model and checked its uncertainty. I wanted the recommendation to show how much confidence it deserved.",
+      "desc": "Using NASA’s simulated turbofan data, I built a remaining-life model and checked its uncertainty. The public fleet monitor lets you replay each engine’s sensor readings alongside its remaining-life estimate and uncertainty interval.",
       "stack": [
         "scikit-learn",
-        "Streamlit",
+        "Streamlit (local)",
         "Conformal prediction",
         "CI"
       ],
       "metric": "100",
       "metricLabel": "engines in FD001 test truth",
       "repo": "CMAPSS-Predictive-Maintenance",
+      "demo": "https://prakhar2828.github.io/CMAPSS-Predictive-Maintenance/",
       "problem": "A remaining-life estimate is more useful when an engineer can also inspect its uncertainty, sensor behavior and evaluation assumptions.",
-      "built": "I built an offline training pipeline and lightweight telemetry path using NASA’s simulated FD001 turbofan data. The system combines bootstrapped tree ensembles, engine-level conformal calibration, schema checks, anomaly flags and an interactive fleet-risk dashboard.",
+      "built": "I built an offline training pipeline and lightweight telemetry path using NASA’s simulated FD001 turbofan data. The system combines bootstrapped tree ensembles, engine-level conformal calibration, schema checks and anomaly flags. The public fleet monitor replays sensor readings, remaining-life estimates and uncertainty intervals from the offline model. I also built a Streamlit dashboard for local analysis.",
       "proof": "Engine-unit separation prevents rows from the same engine leaking between fitting and calibration. Output-contract tests check RUL caps, uncertainty columns, anomaly fields and evaluation scope.",
       "scope": "A research platform on simulated turbofan degradation, not an airline maintenance deployment. The 90% conformal level is a target, not a claim of achieved coverage."
     },

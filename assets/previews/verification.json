@@ -5,14 +5,15 @@
     {
       "project": "Asteria",
       "recording_source": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
-      "video": "assets/tours/asteria-20261116.mp4",
-      "video_sha256": "fe1603175a673d8dbf2842fe7776f1825014bdda3e9c1db8abdca09b207281ac",
+      "video": "assets/tours/asteria-20261120.mp4",
+      "video_sha256": "68574b01048d404dc17fd75f2090a963d0ee60e340c319ae8ac9c2487904547a",
       "chapters_verified": 5,
       "result": "Replaced with current interface capture",
       "card_source": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
-      "card_image": "assets/previews/asteria-home-20261116.jpg",
-      "card_image_sha256": "d4ec1053a703e68e02aceeb98860e093063d51e10eb84a905c1505d87c40f8b5",
-      "card_capture": "Unmodified browser screenshot"
+      "card_image": "assets/previews/asteria-home-20261120.jpg",
+      "card_image_sha256": "bcd8a95fed4ed973fe4b2bbcaf0251453dd56c8cb31f6373694444aaa3bc7a3a",
+      "card_capture": "Unmodified browser screenshot",
+      "verified_on": "2026-11-20"
     },
     {
       "project": "A2 MissionLab",
