@@ -30,10 +30,10 @@
       "id": "missionlab",
       "n": "02",
       "name": "A2 MissionLab",
-      "subtitle": "Working through the engineering behind Artemis II",
+      "subtitle": "Artemis II from a mission control perspective",
       "category": "mission",
       "type": "Independent project · Public-data mission analysis",
-      "desc": "I built MissionLab because I wanted to understand the engineering behind a mission I cared about. It brings public trajectory data, mission events and my engineering models into one place.",
+      "desc": "Pick an event on the mission clock, find Orion on its trajectory, and open the public record behind it. Then explore the engineering models to see how a change in a maneuver affects the flight.",
       "stack": [
         "Python",
         "SPICEyPy",
