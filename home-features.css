@@ -28,7 +28,7 @@
 .slide-stack img {display:block;width:100%;height:auto}
 .slide-stack span {font-size:.83rem;display:flex;justify-content:space-between;gap:.5rem;padding:.6rem .85rem;flex-wrap:wrap}
 .slide-stack b {text-decoration:underline;text-underline-offset:.15rem}
-.home-story {grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr)}
+.home-story {grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);border-top:1px solid #bac6b9;scroll-margin-top:5rem}
 .home-story figure {margin:0}
 .home-story figure img {width:100%;height:auto;max-height:530px;object-fit:contain;display:block;background:#e4e6df}
 .home-story figcaption {font-size:.85rem;margin-top:.6rem}
