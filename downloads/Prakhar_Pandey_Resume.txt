@@ -1,51 +1,42 @@
 Prakhar Pandey
-Software & AI/ML Engineer | Space Systems & Mission Operations
+Software and Machine Learning Engineer | Space Systems and Mission Operations
 Houston, TX | U.S. Citizen | (540) 998-4016 | prakhar280805@gmail.com
-LinkedIn: https://www.linkedin.com/in/prakhar-pandey-470702263
-GitHub: https://github.com/Prakhar2828
-Portfolio: https://prakhar2828.github.io/
+GitHub: github.com/Prakhar2828 | Portfolio: prakhar2828.github.io | LinkedIn: linkedin.com/in/prakhar-pandey-470702263
 
-EXPERIENCE
-NASA Langley Research Center, Center Operations Directorate — Aug 2026 - Present
-AI-Augmented Software Engineer, OSTEM Intern | Hampton, VA
-- Selected by Deputy Director Allen Kilgore for the Risk-Informed Decision – Deferred Maintenance Tiger Team to build AI that matches hazard reports to Maximo assets and flags potential safety risks for expert review.
-- Modernized five applications supporting a center with about 200 facilities and 3,400 personnel. Delivered 5+ features, resolved 20+ defects and contributed to four production releases.
-- Designed a phased Oracle-to-SQL Server migration across 30–60 tables, 100,000+ records and 15+ approval workflows. Verified that nine Oracle tables received downstream updates in controlled tests.
-- Completed 69 test cases for the facilities safety personnel system and wrote 25+ deployment and validation documents across five applications for engineers, application owners and release reviewers.
-- Built a predictive-maintenance workshop on public data. On CWRU bearings, balanced accuracy fell from 97.2% on a held-out load to 52.8% when defect size was also unseen. In a replay of 1.52M MetroPT-3 compressor readings, a pressure rule flagged 93 review episodes versus 387 for Isolation Forest.
+Experience
+NASA Langley Research Center, Center Operations Directorate
+AI-Augmented Software Engineer, OSTEM Intern | Hampton, VA | Aug 2026 to Present
+• Supported four production releases across a portfolio of five center operations applications. Prepared test plans, database mappings and cutover guides for application owners and release reviewers.
+• Verified updates to nine Oracle tables in controlled migration tests and confirmed that room counts matched across Oracle and SQL Server for 6,459 rooms before facility closure cutover.
+• Tested roles, approval routing and database updates for a facilities safety personnel system using a 69-case test plan spanning seven suites.
+• Assigned to investigate how AI could match hazard reports to IBM Maximo assets for the Deferred Maintenance Tiger Team, with safety experts reviewing the evidence for each proposed match.
+• Built a predictive maintenance workshop using public sensor data. In a replay of 1.52 million compressor readings, a pressure rule flagged 93 episodes for review versus 387 for Isolation Forest.
 
-Gruve AI — Nov 2025 - Aug 2026
-Software and AI Engineering Intern | Houston, TX
-- Built an inference benchmark for eight language models, three serving engines and three GPU classes (102 result files). On Qwen3-32B at 16 concurrent requests, vLLM delivered 30% higher throughput than SGLang.
-- Cut result processing from 90 to 15 minutes. Traced one of six benchmark defects to an SGLang setting that shortened outputs by about 77% and corrected the workload so throughput comparisons were valid.
+Gruve AI / AI-Fabrik
+Software Engineering Intern | May 2026 to Aug 2026
+• Benchmarked eight language models across three inference engines. At 16 concurrent requests on Qwen3-32B-FP8, vLLM delivered 1,746 tokens per second versus 1,343 for SGLang.
+• Traced a workload mismatch to an SGLang setting that shortened outputs by about 77%. Automated benchmark reporting, cutting processing time from 90 to 15 minutes per cycle.
 
-Ironbook AI — Jun 2025 - Sep 2025
-Machine Learning and AI Engineering Intern | Singapore, Remote
-- Built a Spark pipeline in Databricks for millions of sensor readings. Detected equipment anomalies with change-point analysis and improved 48-hour forecasting accuracy by 15%.
-- Connected anomaly signals to a LangGraph maintenance workflow. In historical testing, it generated 22 tickets and two proactive recommendations and reduced time to insight by about 25%.
+Ironbook AI
+Machine Learning and AI Engineering Intern | Jun 2025 to Sep 2025
+• Combined 48-hour XGBoost energy forecasts with change point and anomaly detection in a facilities prototype. A demo using mock data generated 22 maintenance tickets and two recommendations for review.
 
-SELECTED TECHNICAL PROJECTS
-Asteria FlightStack & MissionOps | https://github.com/Prakhar2828/asteria-flightstack-missionops
-- Built a C++17 spacecraft simulator with an F Prime component and a FastAPI/Open MCT ground console. Implemented fault injection, onboard safe mode and recovery checks that reject unsafe commands.
-- Mapped 60 flight and ground requirements to test results. All 199 local tests passed, and each of 101 simulated command requests had a recorded outcome.
+Selected Technical Projects
+Asteria FlightStack & MissionOps
+• Built a C++17 CubeSat simulator with F Prime and a FastAPI ground system. Operators can inject faults, inspect telemetry in Open MCT and replay command decisions to verify safe mode recovery.
+• Traced 60 flight and ground requirements to verification results. All 199 automated tests passed locally, and all 101 simulated command requests had a recorded outcome.
 
-A2 MissionLab | Artemis II Mission Analysis | https://github.com/Prakhar2828/a2-missionlab
-- Reconstructed the Artemis II trajectory from public flight data in Python and SPICE. Calculated closest lunar approach at 8,281.938 km from the Moon’s center and built an explorer to replay mission events.
-- Indexed 25 datasets and 81 public sources. Built eight analysis tools and labeled each result by its source so users could trace a value to flight data, a published fact or an engineering model.
+A2 MissionLab | Artemis II trajectory analysis
+• Reconstructed Orion’s lunar flyby from public ephemeris data using Python and SPICE, calculating a closest approach of 8,282 km from the Moon’s center. Linked 24 mission events to an interactive replay.
 
-Wind VISION | Sparse Wind-Field Reconstruction | https://github.com/Prakhar2828/wind-vision-research
-- Compared eight methods on 872 held-out synthetic wind fields. A distance-weighted baseline reconstructed one velocity component with 0.682 m/s RMSE, slightly ahead of the flow-based method at 0.685 m/s.
-- Ported the PyTorch model to NVIDIA PhysicsNeMo and matched all 164 checked gradient tensors. Vectorizing the coherence calculation made one VAE optimizer step 5.55× faster on an NVIDIA L4 GPU.
+Wind VISION | Scientific machine learning
+• Evaluated eight methods for reconstructing wind velocity at unobserved locations in 872 held-out synthetic fields. Inverse distance weighting achieved 0.682 m/s RMSE on one velocity component versus 0.685 m/s for the neural hybrid.
 
-Turbofan Remaining Useful Life | NASA C-MAPSS | https://github.com/Prakhar2828/CMAPSS-Predictive-Maintenance
-- Estimated remaining life for 100 simulated turbofan test engines using 21 sensors and Extra Trees (MAE 13.06 cycles, RMSE 17.37 cycles). Engine-level calibration raised interval coverage from 4.8% to ~83% (90% target).
+Education
+Rice University | Master of Data Science | GPA 3.66/4.00 | Expected Dec 2027
+Virginia Tech | B.S. in Computer Science, Data-Centric Computing | Cum laude | GPA 3.42/4.00 | May 2025
 
-EDUCATION
-Rice University | Master of Data Science | GPA 3.66/4.00 | Houston, TX | Expected Dec 2027
-Virginia Tech | B.S. Computer Science, Data-Centric Computing | Cum Laude | GPA 3.42/4.00 | May 2025
-
-TECHNICAL SKILLS
-Languages: Python, C++17, SQL, JavaScript/TypeScript, Java, Bash, Go, CFML
-Mission systems & testing: SPICE/SpiceyPy, F Prime, Open MCT, telemetry, fault injection, regression testing
-Data & tools: PyTorch, scikit-learn, Spark, Docker, Linux, GitHub Actions, PostgreSQL, SQL Server, Kafka
-Credentials: Confluent Data Streaming Engineer (2025) and Apache Kafka Fundamentals Accreditation (2025)
+Technical Skills
+Software and systems: Python, C++17, SQL, Bash, Linux, Git, Docker, GitHub Actions
+Mission software: F Prime, Open MCT, SPICE, telemetry, fault injection, requirements traceability, regression testing
+Machine learning: PyTorch, scikit-learn, XGBoost, time series analysis, anomaly detection, GPU inference benchmarking
