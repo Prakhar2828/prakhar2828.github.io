@@ -9,7 +9,7 @@
       "type": "Independent project · Spacecraft software",
       "desc": "I integrated a C++ spacecraft model with a ground console and mapped 60 flight and ground requirements to verification. Follow a command from the operator’s request through the onboard checks to the outcome recorded in the journal.",
       "stack": [
-        "C++17",
+        "C++",
         "F Prime",
         "FastAPI",
         "Open MCT"

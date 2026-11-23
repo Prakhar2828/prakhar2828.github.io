@@ -2,7 +2,7 @@
   {
     "id": "asteria",
     "name": "Asteria",
-    "category": "MISSION OPERATIONS / C++17 + WEBASSEMBLY",
+    "category": "MISSION OPERATIONS / C++ + WEBASSEMBLY",
     "title": "Command. Acknowledge. Protect.",
     "intro": "A flight/ground software lab that makes command outcomes, autonomous protection and operational evidence visible.",
     "demo": "https://prakhar2828.github.io/asteria-flightstack-missionops/",
